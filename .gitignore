@@ -1,0 +1,27 @@
+# Dữ liệu thô có thông tin cá nhân: không bao giờ đưa lên git
+nghien-cuu/du-lieu/raw/*
+!nghien-cuu/du-lieu/raw/.gitkeep
+
+# File xuất
+xuat-ban/*
+!xuat-ban/.gitkeep
+
+# Word, Office
+~$*
+*.tmp
+
+# Python (dùng sau khi làm thật đề tài)
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Hệ điều hành, editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+
+# Cài đặt Claude Code riêng của từng máy
+.claude/settings.local.json

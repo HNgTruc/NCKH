@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git grep:*)",
+      "WebSearch",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:ieeexplore.ieee.org)",
+      "WebFetch(domain:aclanthology.org)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:www.scimagojr.com)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:api.crossref.org)",
+      "WebFetch(domain:www.semanticscholar.org)"
+    ],
+    "deny": [
+      "Read(./nghien-cuu/du-lieu/raw/**)",
+      "Edit(./nghien-cuu/du-lieu/raw/**)",
+      "Bash(git push --force:*)"
+    ]
+  }
+}
