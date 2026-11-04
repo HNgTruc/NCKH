@@ -5,10 +5,10 @@ Slide: đối tượng (focus) là bản chất cần làm rõ; khách thể (po
 
 Câu cần trả lời cho đề tài này:
 - Đối tượng là gì: các phương pháp phân loại văn bản để nhận diện tin lừa đảo? hay đặc điểm ngôn ngữ của tin lừa đảo tiếng Việt? Chọn một làm trọng tâm.
-- Khách thể: tin nhắn SMS, email, tin nhắn mạng xã hội bằng tiếng Việt.
+- Khách thể: tin nhắn SMS bằng tiếng Việt (tên đề tài đã chốt chỉ SMS).
 - Không gian: tin gửi tới người dùng tại Việt Nam, nguồn công khai.
 - Thời gian: dữ liệu thu thập trong khoảng nào (lưu ý historical bias).
-- Nội dung: chỉ văn bản, KHÔNG xử lý hình ảnh, giọng nói, cuộc gọi; chỉ phân loại, KHÔNG truy vết người gửi.
+- Nội dung: chỉ văn bản SMS, KHÔNG xử lý email, tin nhắn mạng xã hội (Zalo, Messenger), hình ảnh, giọng nói, cuộc gọi; chỉ phân loại, KHÔNG truy vết người gửi.
 
 Checklist:
 - Đối tượng xuất hiện trong tên đề tài

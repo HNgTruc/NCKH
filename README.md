@@ -1,4 +1,4 @@
-# Phát hiện tin nhắn và email lừa đảo tiếng Việt
+# Phân loại tin nhắn SMS lừa đảo và quảng cáo tiếng Việt bằng PhoBERT
 
 Đồ án cuối kì môn Phương pháp nghiên cứu khoa học trong CNTT (841324), Trường Đại học Sài Gòn. Nhóm viết thuyết minh đề tài NCKH sinh viên theo mẫu 16 mục của trường, nộp dưới dạng `PPNCKH_MSSV1_MSSV2_MSSV3.pdf`, rồi trình bày trước lớp. Sau môn học, nhóm dự định thực hiện đề tài, nên repo có sẵn chỗ cho dữ liệu và mô hình.
 
@@ -14,7 +14,7 @@ NCKH/
 │   └── agents/                   4 trợ lý chạy riêng
 ├── docs/
 │   ├── yeu-cau/                  Đề, barem, mẫu thuyết minh, kiến thức slide
-│   ├── ke-hoach/                 Lịch trình, phân công, câu hỏi cho thầy
+│   ├── ke-hoach/                 Lịch trình, phân công, giả định
 │   └── bien-ban-hop/             Biên bản họp hằng tuần
 ├── thuyet-minh/                  Bản thảo, mỗi mục một file (00 đến 16, 99)
 ├── tong-quan/

@@ -16,15 +16,15 @@ Báo cáo Cuối kì
 
 PHƯƠNG PHÁP NGHIÊN CỨU KHOA HỌC TRONG CÔNG NGHỆ THÔNG TIN
 
-Tên đề tài: [TODO: chép từ mục 1]
+Tên đề tài: Phân loại tin nhắn SMS lừa đảo và quảng cáo tiếng Việt bằng PhoBERT
 
 Sinh viên thực hiện:
 
 | Họ tên | MSSV |
 | --- | --- |
 | Huỳnh Ngọc Trúc | 3123411312 |
-| [TODO] | [TODO] |
-| [TODO] | [TODO] |
+| [TODO: thành viên 2] | [TODO] |
+| [TODO: thành viên 3] | [TODO] |
 
 Ngành: Công nghệ thông tin\
 Trình độ đào tạo: Đại học

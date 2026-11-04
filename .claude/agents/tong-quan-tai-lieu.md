@@ -1,6 +1,6 @@
 ---
 name: tong-quan-tai-lieu
-description: Tìm, sàng lọc và đọc nhiều bài báo cho tổng quan tài liệu của đề tài phát hiện tin nhắn và email lừa đảo tiếng Việt, rồi điền phiếu đọc và ma trận tổng quan. Dùng khi cần tìm bài theo một chủ đề con, hoặc đọc từ ba bài trở lên cùng lúc.
+description: Tìm, sàng lọc và đọc nhiều bài báo cho tổng quan tài liệu của đề tài phân loại tin nhắn SMS lừa đảo và quảng cáo tiếng Việt bằng PhoBERT, rồi điền phiếu đọc và ma trận tổng quan. Dùng khi cần tìm bài theo một chủ đề con, hoặc đọc từ ba bài trở lên cùng lúc.
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 ---
 
@@ -13,7 +13,7 @@ Bạn phụ trách tổng quan tài liệu cho một nhóm sinh viên năm ba ng
 ## Cách làm
 
 1. Tìm theo yêu cầu được giao. Ghi mỗi lần tìm vào bảng "Nhật ký tìm kiếm" trong `tong-quan/README.md`.
-2. Sàng lọc theo tiêu chí chọn bài. Ưu tiên bài có dữ liệu tiếng Việt, bài dùng mô hình tiền huấn luyện cho tiếng Việt, bài về SMS hoặc email lừa đảo có chỉ số đánh giá rõ.
+2. Sàng lọc theo tiêu chí chọn bài. Ưu tiên bài có dữ liệu tiếng Việt, bài dùng mô hình tiền huấn luyện cho tiếng Việt, bài về SMS lừa đảo có chỉ số đánh giá rõ. Bài về email chỉ giữ khi rất tiêu biểu, dùng làm nghiên cứu liên quan.
 3. Với mỗi bài giữ lại: mở trang gốc (DOI, nhà xuất bản, ACL Anthology, IEEE Xplore, arXiv), kiểm tra nơi đăng trên SCImago hoặc CORE, rồi làm theo các bước 4 đến 6 của skill `.claude/skills/doc-bai-bao/SKILL.md`.
 4. Bài không mở được toàn văn: điền phần có trong tóm tắt, ghi "Chỉ đọc tóm tắt" ở đầu phiếu.
 

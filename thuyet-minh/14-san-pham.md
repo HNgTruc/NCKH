@@ -16,7 +16,7 @@ Checklist:
 | --- | --- | --- | --- |
 | 1 | Bài báo khoa học | [TODO] | 01 |
 | 2 | Bài báo khoa học | [TODO] | 01 |
-| 3 | Bộ dữ liệu tin nhắn, email tiếng Việt đã gán nhãn và ẩn danh | [TODO: số mẫu, số nhãn, có hướng dẫn gán nhãn và độ đồng thuận] | 01 |
+| 3 | Bộ dữ liệu tin nhắn SMS tiếng Việt đã gán nhãn và ẩn danh | [TODO: số mẫu, số nhãn, có hướng dẫn gán nhãn và độ đồng thuận] | 01 |
 | 4 | Mô hình và mã nguồn | [TODO] | 01 |
 | 5 | Bản demo | [TODO] | 01 |
 

@@ -1,6 +1,6 @@
 ---
 name: thiet-ke-phuong-phap
-description: Thiết kế phương pháp nghiên cứu cho đề tài phát hiện tin nhắn và email lừa đảo tiếng Việt, gồm nguồn dữ liệu, gán nhãn, chia tập, mô hình cơ sở và mô hình chính, chỉ số đánh giá, đạo đức và bias. Dùng trước khi viết mục 11, 12 hoặc khi cần quyết định một lựa chọn phương pháp.
+description: Thiết kế phương pháp nghiên cứu cho đề tài phân loại tin nhắn SMS lừa đảo và quảng cáo tiếng Việt bằng PhoBERT, gồm nguồn dữ liệu, gán nhãn, chia tập, mô hình cơ sở và mô hình chính, chỉ số đánh giá, đạo đức và bias. Dùng trước khi viết mục 11, 12 hoặc khi cần quyết định một lựa chọn phương pháp.
 tools: Read, Grep, Glob, WebSearch, WebFetch
 ---
 

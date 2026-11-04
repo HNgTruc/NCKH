@@ -4,7 +4,7 @@ Barem BT2: mô tả tình hình thực tế; chỉ ra thiếu sót của nghiên
 Slide: thể hiện cấp thiết bằng số liệu thống kê, báo cáo uy tín, xu hướng, so sánh quốc tế.
 
 Khung gợi ý (4 đoạn):
-1. Thực trạng: số liệu lừa đảo qua tin nhắn, email tại Việt Nam, có nguồn chính thống (cơ quan nhà nước, báo cáo an ninh mạng). KHÔNG mở bằng "Trong thời đại 4.0".
+1. Thực trạng: số liệu lừa đảo qua tin nhắn SMS tại Việt Nam, có nguồn chính thống (cơ quan nhà nước, báo cáo an ninh mạng). KHÔNG mở bằng "Trong thời đại 4.0".
 2. Thiếu sót: tóm một câu từ mục 8.4.
 3. Hướng giải quyết của đề tài: dữ liệu gì, mô hình gì, đo bằng gì.
 4. Đóng góp: cho ngành (bộ dữ liệu, kết quả so sánh), cho Trường ĐH Sài Gòn (sinh viên làm NCKH, công bố), cho xã hội (công cụ cảnh báo).
