@@ -25,6 +25,6 @@ Ghi quyết định đã chốt, ví dụ tên đề tài, nhãn dữ liệu, ph
 | --- | --- | --- |
 | | | |
 
-## Câu hỏi mới cho thầy
+## Giả định mới
 
-Chuyển sang `docs/ke-hoach/cau-hoi-cho-thay.md`.
+Ghi vào `docs/ke-hoach/gia-dinh.md`.

@@ -1,6 +1,6 @@
 ---
 name: kiem-tra-truoc-nop
-description: Kiểm tra toàn bộ bản thuyết minh trước khi nộp hoặc trước khi gửi thầy xem, theo đề cuối kì, barem Bài tập 2 và mẫu 16 mục, có phản biện độc lập. Dùng ở tuần 5, trước khi xuất PDF, hoặc khi người dùng hỏi bản thảo còn thiếu gì.
+description: Kiểm tra toàn bộ bản thuyết minh trước khi nộp hoặc khi muốn rà bản nháp, theo đề cuối kì, barem Bài tập 2 và mẫu 16 mục, có phản biện độc lập. Dùng ở tuần 5, trước khi xuất PDF, hoặc khi người dùng hỏi bản thảo còn thiếu gì.
 ---
 
 # Kiểm tra trước khi nộp

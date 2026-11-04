@@ -1,13 +1,14 @@
 # CLAUDE.md
 
-Repo này là đồ án cuối kì môn Phương pháp nghiên cứu khoa học trong CNTT (mã 841324, Khoa CNTT, Trường Đại học Sài Gòn, giảng viên TS. Vũ Ngọc Thanh Sang). Sản phẩm nộp là bản thuyết minh đề tài NCKH sinh viên cấp trường theo mẫu 16 mục, đề tài "Phát hiện tin nhắn và email lừa đảo tiếng Việt". Nhóm muốn làm thật đề tài sau khi môn kết thúc, nên `nghien-cuu/` dành cho dữ liệu và mô hình.
+Repo này là đồ án cuối kì môn Phương pháp nghiên cứu khoa học trong CNTT (mã 841324, Khoa CNTT, Trường Đại học Sài Gòn, giảng viên TS. Vũ Ngọc Thanh Sang). Sản phẩm nộp là bản thuyết minh đề tài NCKH sinh viên cấp trường theo mẫu 16 mục, đề tài "Phân loại tin nhắn SMS lừa đảo và quảng cáo tiếng Việt bằng PhoBERT" (chốt 04/11/2026, phạm vi chỉ SMS, đã bỏ email; điểm mới là tách tin lừa đảo khỏi tin rác quảng cáo, vì các bài trong nước chỉ phân loại spam/ham). Nhóm muốn làm thật đề tài sau khi môn kết thúc, nên `nghien-cuu/` dành cho dữ liệu và mô hình.
 
 ## Bối cảnh nhóm
 
 | Thông tin | Giá trị |
 | --- | --- |
-| Thành viên | Huỳnh Ngọc Trúc (3123411312), [Thành viên 2], [Thành viên 3] |
+| Thành viên | Huỳnh Ngọc Trúc (3123411312), [Thành viên 2], [Thành viên 3]. Trúc sẽ điền tên hai bạn khi viết báo cáo |
 | Giới hạn | Tối đa 3 người mỗi nhóm (theo đề cuối kì) |
+| Cách làm hiện tại | Trúc làm toàn bộ đồ án, không chia việc. Trong thuyết minh vẫn giữ cấu trúc nhóm 3 người và vai trò A, B, C; khi làm việc thì coi mọi vai là Trúc |
 | Kỹ năng hiện có | Python và xử lý dữ liệu: chưa biết. Học máy, NLP: mới biết lý thuyết. Đọc bài báo tiếng Anh, trích dẫn IEEE: chưa biết |
 | Ngôn ngữ làm việc | Tiếng Việt. Thuật ngữ chuyên ngành giữ tiếng Anh trong ngoặc ở lần đầu xuất hiện |
 
@@ -18,7 +19,7 @@ Vì nhóm mới học, khi giải thích một khái niệm (precision, recall, 
 | Thư mục | Nội dung | Ai sửa |
 | --- | --- | --- |
 | `docs/yeu-cau/` | Đề cuối kì, barem Bài tập 2, mẫu 16 mục, kiến thức slide. Đây là nguồn sự thật về yêu cầu | Chỉ sửa khi thầy đổi yêu cầu |
-| `docs/ke-hoach/` | Lịch trình 6 tuần, phân công, câu hỏi cho thầy, báo cáo kiểm tra | Cả nhóm |
+| `docs/ke-hoach/` | Lịch trình 6 tuần, phân công, giả định nhóm tự quyết, báo cáo kiểm tra | Cả nhóm |
 | `docs/bien-ban-hop/` | Biên bản họp Chủ nhật hằng tuần | Người chủ trì họp |
 | `thuyet-minh/` | Bản thảo thuyết minh, mỗi mục một file, đánh số theo mẫu | Người phụ trách mục đó |
 | `tong-quan/` | Chiến lược tìm bài, ma trận tổng quan, phiếu đọc từng bài, `references.bib` | Vai trò B |
@@ -76,3 +77,5 @@ git grep -n -E "\[TODO|\[CẦN NGUỒN\]|\[TỰ VIẾT LẠI\]" -- thuyet-minh
 ## Quy ước git
 
 Commit nhỏ, mỗi commit một mục. Tiêu đề commit dạng `[muc-08] them 3 bai vao tong quan` hoặc `[tong-quan] phieu doc PhoBERT`. Kéo về (`git pull`) trước khi sửa, vì ba người cùng viết.
+
+Claude không tự chạy `git add`, `git commit`, `git push`. Trúc tự commit. Xong một việc, Claude đưa danh sách lệnh đã chia theo từng commit (file cần `git add`, tiêu đề commit theo dạng trên) để Trúc tự chạy.

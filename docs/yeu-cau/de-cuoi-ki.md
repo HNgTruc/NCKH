@@ -41,4 +41,4 @@ Bảng này lấy từ trang 2 của đề, áp dụng cho tháng 1 đến thán
 | Ngày | 09-14/03 | 16-21/03 | 23-28/03 | 30/03-04/04 | 06-11/04 |
 | Điểm tối đa nếu trình bày tuần đó | 10 | 10 | 9 | 9 | 8.5 |
 
-Điểm tối đa giảm theo tuần trình bày, nên đăng ký sớm có lợi trực tiếp về điểm. Lịch của học kỳ này ghi trong `docs/ke-hoach/cau-hoi-cho-thay.md` khi hỏi được.
+Điểm tối đa giảm theo tuần trình bày, nên đăng ký sớm có lợi trực tiếp về điểm. Lịch của học kỳ này ghi trong `docs/ke-hoach/gia-dinh.md`, dòng 1.

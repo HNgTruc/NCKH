@@ -10,10 +10,10 @@ argument-hint: "[ghi chú buổi họp]"
 
 1. Lấy ngày hôm nay, xác định đang ở tuần mấy trong `docs/ke-hoach/lich-trinh.md`.
 2. Xem bằng chứng tiến độ, không chỉ dựa vào lời kể: `git log --since="8 days ago" --stat`, số TODO còn lại trong `thuyet-minh/`, số dòng trong ma trận tổng quan, số phiếu đọc.
-3. Hỏi người dùng những gì git không thể hiện (đã đăng ký lịch trình bày chưa, thầy trả lời gì).
+3. Hỏi người dùng những gì git không thể hiện (đã đăng ký lịch trình bày chưa).
 4. Đề xuất trạng thái mới (Chưa làm, Đang làm, Xong) cho từng tuần trong lịch trình, sửa sau khi người dùng đồng ý.
 5. Tạo biên bản `docs/bien-ban-hop/<yyyy-mm-dd>.md` theo `_mau.md`, điền việc tuần trước kèm bằng chứng (commit, file), vướng mắc, quyết định, việc tuần này.
-6. Câu hỏi mới cho thầy thì thêm vào `docs/ke-hoach/cau-hoi-cho-thay.md`. Câu trả lời mới của thầy thì ghi vào cột cuối và báo những file cần sửa theo.
+6. Điểm đề không nói rõ thì nhóm tự quyết và ghi vào `docs/ke-hoach/gia-dinh.md`, kèm lý do và những file cần sửa theo. Không hỏi ý kiến thầy.
 
 ## Đầu ra
 

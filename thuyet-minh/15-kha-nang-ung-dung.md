@@ -1,7 +1,7 @@
 <!-- HƯỚNG DẪN
 Mẫu: Khả năng ứng dụng và phát triển của đề tài (không có chỉ dẫn thêm).
 Slide Chương 4: tiêu chí khả áp dụng gồm khả thi công nghệ, kinh tế, xã hội, khả năng mở rộng, bền vững. Lĩnh vực áp dụng: giáo dục, công nghiệp và công nghệ, chính sách công.
-Bài tập 2 có thêm "Kết luận và kiến nghị" mà mẫu không có. Tạm viết ở 15.3, chờ hỏi thầy (docs/ke-hoach/cau-hoi-cho-thay.md, câu 3).
+Bài tập 2 có thêm "Kết luận và kiến nghị" mà mẫu không có. Tạm để ở 15.3, chờ Trúc quyết (docs/ke-hoach/gia-dinh.md, dòng 3).
 
 Checklist:
 - Ứng dụng nêu người dùng cụ thể (ai dùng, dùng thế nào)

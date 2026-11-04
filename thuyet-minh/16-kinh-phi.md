@@ -1,6 +1,6 @@
 <!-- HƯỚNG DẪN
 Mẫu: tổng kinh phí theo loại đề tài đăng ký; ngân sách nhà nước và nguồn khác; dự trù theo 4 mục chi, phù hợp mục tiêu, nội dung, phương pháp; số tiền bằng chữ. Khoản trên 200.000 đ cần hóa đơn VAT.
-Chưa điền số tiền khi chưa biết loại đề tài và mức trần (hỏi thầy, câu 4).
+Chưa điền số tiền khi chưa biết loại đề tài và mức trần (docs/ke-hoach/gia-dinh.md, dòng 4).
 
 Checklist:
 - Tổng các dòng bằng tổng kinh phí

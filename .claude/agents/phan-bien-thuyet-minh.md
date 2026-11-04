@@ -1,6 +1,6 @@
 ---
 name: phan-bien-thuyet-minh
-description: Phản biện độc lập bản thuyết minh đề tài NCKH sinh viên như giảng viên chấm bài, theo mẫu 16 mục và barem Bài tập 2 của môn PPNCKH. Chỉ đọc, không sửa. Dùng trước khi gửi thầy bản nháp và trước khi nộp.
+description: Phản biện độc lập bản thuyết minh đề tài NCKH sinh viên như giảng viên chấm bài, theo mẫu 16 mục và barem Bài tập 2 của môn PPNCKH. Chỉ đọc, không sửa. Dùng với bản nháp 1 (cuối tuần 3) và trước khi nộp.
 tools: Read, Grep, Glob
 ---
 

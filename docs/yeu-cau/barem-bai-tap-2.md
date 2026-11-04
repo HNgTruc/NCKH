@@ -35,7 +35,7 @@ Nguồn: [50_841324_PPNCKHTrongCNTT.pdf](https://drive.google.com/file/d/1eTbvNt
 | Thời gian bắt đầu và kết thúc dự kiến | 3 | `thuyet-minh/01-07-thong-tin-chung.md` |
 | Nội dung chia nhỏ theo mục tiêu cụ thể, bảng tiến độ có ngày bắt đầu, ngày kết thúc, người phụ trách | 13 | `thuyet-minh/13-noi-dung-tien-do.md` |
 | Kết quả dự kiến | 14 | `thuyet-minh/14-san-pham.md` |
-| Kết luận và kiến nghị | Mẫu không có mục này | Viết cuối `thuyet-minh/15-kha-nang-ung-dung.md`, chờ hỏi thầy |
+| Kết luận và kiến nghị | Mẫu không có mục này | Viết cuối `thuyet-minh/15-kha-nang-ung-dung.md`, chờ nhóm quyết (`docs/ke-hoach/gia-dinh.md`, dòng 3) |
 | Tài liệu tham khảo theo IEEE | Sau mục 16 | `thuyet-minh/99-tai-lieu-tham-khao.md` |
 
 ## Chuẩn đầu ra liên quan (CLO, thang Bloom)
