@@ -31,13 +31,14 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 
 | Luồng | Việc | Công cụ | Sản phẩm | Trạng thái |
 | --- | --- | --- | --- | --- |
-| T | Commit các file đang dở (lệnh ở cuối file này) | | 3 commit | Chưa làm |
+| T | Commit các file đang dở | | 4 commit, `0a3fc85` đến `8deb202` | Xong |
 | T | Hỏi lớp kênh nộp và giới hạn trang. Ghi vào `gia-dinh.md` dòng 2, 6. Ngày nộp đã biết: thứ Ba 10/11 | | Kênh nộp | Chưa làm |
 | T | Xin Khang và Nhân họ tên đầy đủ, MSSV, lớp (cần cho bìa, mục 5 và tên file PDF). Đã ghi vai: Khang B, Nhân C | | Đủ thông tin mục 4, 5 | Đang làm |
-| P | Nhắn bạn bè, người thân xin tin SMS lừa đảo và quảng cáo họ nhận được (chụp màn hình hoặc chép nội dung), nói rõ sẽ xóa số điện thoại, tên trước khi dùng. Làm sớm vì phải chờ người khác trả lời | | Tin nhắn gửi về | Chưa làm |
-| P | Xuất SMS trong điện thoại Trúc ra file, lưu vào `nghien-cuu/du-lieu/raw/` | | File thô trong `raw/` | Chưa làm |
-| P | Claude viết script ẩn danh (thay số điện thoại, số tài khoản, số thẻ, OTP, email bằng thẻ như `<SDT>`) và notebook Colab chạy mô hình, có chú thích tiếng Việt từng bước | | `nghien-cuu/src/`, `nghien-cuu/notebooks/` | Chưa làm |
-| T | Viết mục 10: 1 mục tiêu tổng quát, 4 mục tiêu cụ thể, 5 câu hỏi nghiên cứu. Mục này làm trước vì mục 11 đến 14 bám theo nó | `viet-muc-thuyet-minh 10` | Mục 10 | Chưa làm |
+| P | Tìm bộ dữ liệu công khai thay cho việc tự thu tin nhắn. Chọn bộ Hugging Face tran-2026 (2.991 SMS, CC BY 4.0, 2 nhãn), viết phiếu đọc, sửa câu khoảng trống trong ma trận | | `tong-quan/phieu-doc/tran-2026-vi-sms-dataset.md` | Xong |
+| P | Claude viết script gán nhãn sơ bộ: tải bộ dữ liệu, bỏ trùng, quét thêm số điện thoại, gợi ý 3 nhãn, chọn đợt 1 gồm 600 tin (200 mỗi nhãn) và mẫu kappa 100 tin | `nghien-cuu/src/gan_nhan_so_bo.py` | `processed/tran-2026/gan-nhan-so-bo.csv`, `mau-kappa-100.csv` | Xong |
+| P | Trúc chốt quy tắc cho tin cờ bạc, hẹn hò, và cho thông báo nhà mạng có mời mua gói, ghi vào `huong-dan-gan-nhan.md` | | Quy tắc 4, 5, 6 | Xong |
+| P | Claude viết notebook Colab chạy mô hình, có chú thích tiếng Việt từng bước | | `nghien-cuu/notebooks/` | Chưa làm |
+| T | Viết mục 10: 1 mục tiêu tổng quát, 4 mục tiêu cụ thể, 5 câu hỏi nghiên cứu. Mục này làm trước vì mục 11 đến 14 bám theo nó | `viet-muc-thuyet-minh 10` | Mục 10, commit `4c571e1` | Xong |
 
 ### Thứ Bảy 07/11
 
@@ -45,10 +46,10 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | --- | --- | --- | --- | --- | --- |
 | Sáng | T | Tìm bổ sung tối đa 1 giờ: Google Scholar với "Vietnamese smishing", "Vietnamese SMS scam", "SMS lừa đảo tiếng Việt"; mở bài RIVF 2023 và IDEAL 2024 xem có tách lừa đảo không. Hết giờ thì dừng, câu khoảng trống ghi "trong phạm vi đã tìm" | `tong-quan-tai-lieu` | Nhật ký tìm kiếm, câu khoảng trống đã kiểm | Chưa làm |
 | Sáng | T | Viết mục 11 và mục 8 từ ma trận tổng quan | `viet-muc-thuyet-minh 11`, `viet-muc-thuyet-minh 8` | Mục 8, 11 | Chưa làm |
-| Sáng | P | Chạy script ẩn danh trên `raw/`, tự đọc lại từng tin xem còn sót tên, địa chỉ không, rồi lưu vào `processed/`. Claude không đọc `raw/` | Script ẩn danh | File trong `processed/` | Chưa làm |
+| Sáng | P | Mở `gan-nhan-so-bo.csv` bằng Excel, lọc `dot = 1`, điền cột `nhan_chot` cho 600 tin. Tin còn sót họ tên thì ghi vào cột `ghi_chu`. Khoảng 1,5 đến 2 giờ | `huong-dan-gan-nhan.md` | 600 tin đã chốt nhãn | Chưa làm |
 | Chiều | T | Viết mục 9 từ `tong-quan/so-lieu.md` | `viet-muc-thuyet-minh 9` | Mục 9 | Chưa làm |
 | Chiều | T | Thiết kế và viết mục 12 (dữ liệu, gán nhãn, mô hình, chỉ số, đạo đức, bias) | `thiet-ke-phuong-phap`, `viet-muc-thuyet-minh 12` | Mục 12 | Chưa làm |
-| Chiều | P | Gán nhãn toàn bộ tin trong `processed/` theo 3 nhãn. Nhờ một người gán độc lập 100 tin để tính Cohen's kappa | `huong-dan-gan-nhan.md` | Bảng đã gán nhãn | Chưa làm |
+| Chiều | P | Gửi `mau-kappa-100.csv` cho một người gán độc lập (file không kèm nhãn), kèm `huong-dan-gan-nhan.md` | | 100 tin người thứ hai gán | Chưa làm |
 | Tối | P | Chạy mô hình cơ sở TF-IDF + Logistic Regression trên Colab, ghi số liệu | Notebook | Bảng kết quả mô hình cơ sở | Chưa làm |
 
 ### Chủ nhật 08/11
@@ -85,19 +86,18 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 
 | Mốc | Nếu chưa đạt | Thì |
 | --- | --- | --- |
-| 12:00 Chủ nhật 08/11: có bảng đã gán nhãn trong `processed/` | Chưa có | Bỏ PhoBERT. Chỉ báo thống kê mô tả (số tin mỗi nhãn, tỉ lệ không dấu) |
+| 12:00 Chủ nhật 08/11: 600 tin đợt 1 đã có `nhan_chot` | Chưa có | Bỏ PhoBERT. Chỉ báo thống kê mô tả (số tin mỗi nhãn, tỉ lệ không dấu) và so nhãn gốc 2 lớp với nhãn 3 lớp |
 | Tối Chủ nhật 08/11: có ít nhất số liệu mô hình cơ sở | Chưa có | Bỏ hẳn luồng P. Thuyết minh chỉ mô tả kế hoạch. Sáng thứ Hai không được dùng để chạy mô hình, vì phải xuất PDF |
-| Lớp `LUA_DAO` có dưới khoảng 30 tin | | Vẫn báo số, nhưng ghi rõ là cỡ mẫu quá nhỏ để kết luận, chỉ chứng minh quy trình chạy được |
 
 ## Thử nghiệm sơ bộ (đề xuất, Trúc chốt trước khi chạy)
 
 | Thành phần | Đề xuất | Vì sao |
 | --- | --- | --- |
-| Dữ liệu | Khoảng 300 tin từ điện thoại Trúc và người đồng ý chia sẻ, đã ẩn danh | Thu được trong 1 ngày, đủ để thử quy trình |
-| Gán nhãn | Trúc gán hết, một người khác gán lại 100 tin, tính Cohen's kappa | Kappa cho biết hai người hiểu nhãn giống nhau tới đâu. Ví dụ hai người cùng gọi tin "Vietcombank: tài khoản bị khóa, bấm link" là lừa đảo thì đồng thuận |
+| Dữ liệu | 600 tin đợt 1 lấy từ bộ Hugging Face tran-2026 (2.629 tin sau khi bỏ trùng), 200 tin mỗi nhãn gợi ý | Tin SMS thật, giấy phép CC BY 4.0, không phải tự thu. 600 tin duyệt kịp trong một buổi |
+| Gán nhãn | Script gợi ý nhãn, Trúc duyệt và chốt 600 tin, một người khác gán độc lập 100 tin, tính Cohen's kappa | Kappa cho biết hai người hiểu nhãn giống nhau tới đâu. Ví dụ hai người cùng gọi tin "Vietcombank: tài khoản bị khóa, bấm link" là lừa đảo thì đồng thuận |
 | Mô hình cơ sở | TF-IDF + Logistic Regression | Chạy vài giây, là mốc để so. vu-2023-nhung-tu cũng dùng TF-IDF làm cơ sở |
 | Mô hình chính | PhoBERT-base | Mô hình chính của đề tài |
-| Chia dữ liệu | Chia 5 phần, lần lượt lấy 1 phần làm kiểm tra (5-fold, phân tầng theo nhãn), cố định random seed | Với 300 tin, một tập kiểm tra 60 tin cho kết quả dao động mạnh. Chia 5 lần rồi lấy trung bình ổn hơn |
+| Chia dữ liệu | Chia 5 phần, lần lượt lấy 1 phần làm kiểm tra (5-fold, phân tầng theo nhãn), cố định random seed | Với 600 tin, một tập kiểm tra 120 tin cho kết quả dao động mạnh. Chia 5 lần rồi lấy trung bình ổn hơn |
 | Chỉ số | F1 lớp `LUA_DAO`, F1 trung bình macro, ma trận nhầm lẫn | Tin lừa đảo ít hơn tin thường. Mô hình đoán "bình thường" cho mọi tin vẫn đạt accuracy cao mà không bắt được tin lừa đảo nào |
 
 ## Quyết định Trúc cần chốt
@@ -117,21 +117,3 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 ## Sau khi nộp
 
 Thử nghiệm sơ bộ là bước đầu của việc làm thật đề tài. Sau buổi trình bày, các bước tiếp theo theo `nghien-cuu/README.md`: mở rộng nguồn dữ liệu và ghi điều khoản vào `nghien-cuu/du-lieu/README.md`, gán nhãn với đủ người, chạy thêm ViSoBERT, kiểm tra mô hình trên tin không dấu. Lịch chi tiết lập lại sau khi nộp, theo bảng tiến độ ở mục 13.2.
-
-## Lệnh commit cho phần đang dở
-
-Trúc tự chạy:
-
-```powershell
-git add tong-quan/phieu-doc/ tong-quan/ma-tran-tong-quan.md
-git commit -m "[tong-quan] phieu doc 8 bai, cap nhat ma tran tong quan"
-
-git add tong-quan/so-lieu.md
-git commit -m "[tong-quan] so lieu lua dao truc tuyen va van ban phap luat"
-
-git add docs/ke-hoach/gia-dinh.md docs/ke-hoach/lich-trinh.md docs/ke-hoach/phan-cong.md CLAUDE.md
-git commit -m "[ke-hoach] don lich nop 10/11, vai tro Khang Nhan"
-
-git add thuyet-minh/00-bia.md thuyet-minh/01-07-thong-tin-chung.md
-git commit -m "[muc-05] ten thanh vien, thang nop tren bia"
-```
