@@ -6,7 +6,7 @@ Repo này là đồ án cuối kì môn Phương pháp nghiên cứu khoa học 
 
 | Thông tin | Giá trị |
 | --- | --- |
-| Thành viên | Huỳnh Ngọc Trúc (3123411312), [Thành viên 2], [Thành viên 3]. Trúc sẽ điền tên hai bạn khi viết báo cáo |
+| Thành viên | Nhóm 5: Huỳnh Ngọc Trúc (3123411312, vai A), Khang (vai B), Nhân (vai C). Họ tên đầy đủ và MSSV của Khang, Nhân còn chờ Trúc gửi |
 | Giới hạn | Tối đa 3 người mỗi nhóm (theo đề cuối kì) |
 | Cách làm hiện tại | Trúc làm toàn bộ đồ án, không chia việc. Trong thuyết minh vẫn giữ cấu trúc nhóm 3 người và vai trò A, B, C; khi làm việc thì coi mọi vai là Trúc |
 | Kỹ năng hiện có | Python và xử lý dữ liệu: chưa biết. Học máy, NLP: mới biết lý thuyết. Đọc bài báo tiếng Anh, trích dẫn IEEE: chưa biết |
