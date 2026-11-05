@@ -23,10 +23,10 @@ Sinh viên thực hiện:
 | Họ tên | MSSV |
 | --- | --- |
 | Huỳnh Ngọc Trúc | 3123411312 |
-| [TODO: thành viên 2] | [TODO] |
-| [TODO: thành viên 3] | [TODO] |
+| Khang [TODO: họ tên đầy đủ] | [TODO] |
+| Nhân [TODO: họ tên đầy đủ] | [TODO] |
 
 Ngành: Công nghệ thông tin\
 Trình độ đào tạo: Đại học
 
-TP. Hồ Chí Minh, tháng 12 năm 2026
+TP. Hồ Chí Minh, tháng 11 năm 2026

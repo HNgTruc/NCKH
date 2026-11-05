@@ -42,9 +42,9 @@ Loại đề tài: [TODO: A1 / B1 / B2 / C, xem docs/ke-hoach/gia-dinh.md dòng 
 
 | STT | Họ và tên | Đơn vị (MSSV, lớp, CTĐT) | Nội dung nghiên cứu cụ thể được giao | Chữ ký |
 | --- | --- | --- | --- | --- |
-| 1 | Huỳnh Ngọc Trúc | 3123411312, [TODO: lớp], Công nghệ thông tin | Chủ nhiệm. [TODO: khớp vai trò A] | |
-| 2 | [TODO] | [TODO] | [TODO: khớp vai trò B] | |
-| 3 | [TODO] | [TODO] | [TODO: khớp vai trò C] | |
+| 1 | Huỳnh Ngọc Trúc | 3123411312, [TODO: lớp], Công nghệ thông tin | Chủ nhiệm, biên tập. Tính cấp thiết (mục 9), nội dung và tiến độ, sản phẩm, khả năng ứng dụng, kinh phí (mục 13 đến 16) | |
+| 2 | Khang [TODO: họ tên đầy đủ] | [TODO: MSSV, lớp], Công nghệ thông tin | Tổng quan tài liệu, phiếu đọc, ma trận tổng quan, tài liệu tham khảo (mục 8) | |
+| 3 | Nhân [TODO: họ tên đầy đủ] | [TODO: MSSV, lớp], Công nghệ thông tin | Mục tiêu, đối tượng và phạm vi, thiết kế thu thập và gán nhãn dữ liệu, mô hình, chỉ số đánh giá (mục 10 đến 12) | |
 
 ## 6. Mô tả năng lực nghiên cứu của chủ nhiệm và các thành viên
 
