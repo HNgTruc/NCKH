@@ -2,6 +2,10 @@
 nghien-cuu/du-lieu/raw/*
 !nghien-cuu/du-lieu/raw/.gitkeep
 
+# Bộ Hugging Face: tải lại được bằng script. Chưa đưa lên git vì đã thấy tin còn sót họ tên,
+# chờ duyệt xong ẩn danh mới quyết
+nghien-cuu/du-lieu/processed/tran-2026/*.csv
+
 # File xuất
 xuat-ban/*
 !xuat-ban/.gitkeep

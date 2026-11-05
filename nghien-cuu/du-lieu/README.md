@@ -8,7 +8,7 @@ Mỗi nguồn một dòng. Điều khoản sử dụng phải đọc trước kh
 
 | Nguồn | Kênh (SMS, email, mạng xã hội) | Cách lấy | Điều khoản, giấy phép | Số mẫu | Khoảng thời gian | Người phụ trách |
 | --- | --- | --- | --- | --- | --- | --- |
-| [TODO] | | | | | | |
+| [tran-2026-vi-sms-dataset](../../tong-quan/phieu-doc/tran-2026-vi-sms-dataset.md): Hugging Face `trannguyenthaituan/vietnamese_sms_dataset`, commit `a90e2bd` | SMS | Script `nghien-cuu/src/gan_nhan_so_bo.py` tải file `full_dataset.csv` về `processed/tran-2026/` | CC BY 4.0: được dùng, sửa, chia sẻ nếu ghi nguồn. Tác giả đã ẩn danh bằng thẻ `[PHONE]`, `[MONEY]`...; script quét thêm số điện thoại, số dài | 2.991 dòng, 2.629 sau khi bỏ trùng | 28/05/2026 đến 03/08/2026 | Trúc (vai C) |
 
 ## Thẻ dữ liệu (điền khi có dữ liệu)
 
