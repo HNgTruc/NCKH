@@ -24,7 +24,7 @@ Xây dựng và đánh giá mô hình phân loại tin nhắn SMS tiếng Việt
 
 ### 10.2. Mục tiêu cụ thể
 
-- MT1. Xây dựng bộ dữ liệu khoảng 3.000 tin nhắn SMS tiếng Việt đã ẩn danh, gán ba nhãn lừa đảo, quảng cáo, bình thường theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán đo bằng Cohen's kappa đạt ngưỡng nêu ở mục 12.
+- MT1. Xây dựng bộ dữ liệu SMS tiếng Việt ba nhãn lừa đảo, quảng cáo, bình thường bằng cách gán lại nhãn cho bộ SMS công khai hai nhãn (2.629 tin sau khi bỏ trùng) và bổ sung tin nhắn tự thu thập đã ẩn danh, theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán đo bằng Cohen's kappa đạt ngưỡng nêu ở mục 12.
 - MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên cùng tập kiểm tra bằng precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
 - MT3. Đánh giá mức giảm F1 của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh hoặc bị chèn ký tự, so với tin nguyên gốc.
 - MT4. Xây dựng bản demo web dùng mô hình có F1 lớp lừa đảo cao nhất ở MT2: người dùng dán một tin nhắn vào và nhận lại nhãn dự đoán kèm xác suất của từng nhãn.
