@@ -37,7 +37,7 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | P | Tìm bộ dữ liệu công khai thay cho việc tự thu tin nhắn. Chọn bộ Hugging Face tran-2026 (2.991 SMS, CC BY 4.0, 2 nhãn), viết phiếu đọc, sửa câu khoảng trống trong ma trận | | `tong-quan/phieu-doc/tran-2026-vi-sms-dataset.md` | Xong |
 | P | Claude viết script gán nhãn sơ bộ: tải bộ dữ liệu, bỏ trùng, quét thêm số điện thoại, gợi ý 3 nhãn, chọn đợt 1 gồm 600 tin (200 mỗi nhãn) và mẫu kappa 100 tin | `nghien-cuu/src/gan_nhan_so_bo.py` | `processed/tran-2026/gan-nhan-so-bo.csv`, `mau-kappa-100.csv` | Xong |
 | P | Trúc chốt quy tắc cho tin cờ bạc, hẹn hò, và cho thông báo nhà mạng có mời mua gói, ghi vào `huong-dan-gan-nhan.md` | | Quy tắc 4, 5, 6 | Xong |
-| P | Claude viết notebook Colab chạy mô hình, có chú thích tiếng Việt từng bước | | `nghien-cuu/notebooks/` | Chưa làm |
+| P | Claude viết notebook Colab chạy TF-IDF + LR, PhoBERT-base, ViSoBERT (5-fold, có đo trên bản bỏ dấu, có ô tính kappa). Đã chạy thử các ô không cần GPU | | `nghien-cuu/notebooks/thu-nghiem-so-bo.ipynb` | Xong |
 | T | Viết mục 10: 1 mục tiêu tổng quát, 4 mục tiêu cụ thể, 5 câu hỏi nghiên cứu. Mục này làm trước vì mục 11 đến 14 bám theo nó | `viet-muc-thuyet-minh 10` | Mục 10, commit `4c571e1` | Xong |
 
 ### Thứ Bảy 07/11
@@ -50,13 +50,13 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | Chiều | T | Viết mục 9 từ `tong-quan/so-lieu.md` | `viet-muc-thuyet-minh 9` | Mục 9 | Chưa làm |
 | Chiều | T | Thiết kế và viết mục 12 (dữ liệu, gán nhãn, mô hình, chỉ số, đạo đức, bias) | `thiet-ke-phuong-phap`, `viet-muc-thuyet-minh 12` | Mục 12 | Chưa làm |
 | Chiều | P | Gửi `mau-kappa-100.csv` cho một người gán độc lập (file không kèm nhãn), kèm `huong-dan-gan-nhan.md` | | 100 tin người thứ hai gán | Chưa làm |
-| Tối | P | Chạy mô hình cơ sở TF-IDF + Logistic Regression trên Colab, ghi số liệu | Notebook | Bảng kết quả mô hình cơ sở | Chưa làm |
+| Tối | P | Mở notebook trên Colab (bật GPU T4), Run all, tải lên file đã duyệt. Notebook chạy cả 3 mô hình trong khoảng 15 đến 25 phút. Chép `ket-qua-so-bo.json` vào `nghien-cuu/ket-qua/` | `thu-nghiem-so-bo.ipynb` | Kết quả 3 mô hình | Chưa làm |
 
 ### Chủ nhật 08/11
 
 | Buổi | Luồng | Việc | Công cụ | Sản phẩm | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
-| Sáng | P | Chạy PhoBERT-base trên Colab (GPU miễn phí). Để máy chạy, làm luồng T trong lúc chờ | Notebook | Bảng so sánh 2 mô hình | Chưa làm |
+| Sáng | P | Dự phòng: chạy lại notebook nếu tối thứ Bảy lỗi. Khi người thứ hai gán xong, chạy ô 11 tính kappa | Notebook | Kappa | Chưa làm |
 | Sáng | T | Viết mục 13, 14, 15, 16 và mục 1 đến 7, bìa | `viet-muc-thuyet-minh` | Đủ 16 mục | Chưa làm |
 | 12:00 | P | Điểm dừng 1 (xem dưới) | | | Chưa làm |
 | Chiều | T | Đưa kết quả thử nghiệm sơ bộ vào thuyết minh (chỗ đặt: Trúc chốt) | | Đoạn kết quả sơ bộ | Chưa làm |
