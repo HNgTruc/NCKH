@@ -49,7 +49,7 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | Sáng | P | Mở `gan-nhan-so-bo.csv` bằng Excel, lọc `dot = 1`, điền cột `nhan_chot` cho 600 tin. Tin còn sót họ tên thì ghi vào cột `ghi_chu`. Khoảng 1,5 đến 2 giờ | `huong-dan-gan-nhan.md` | 600 tin đã chốt nhãn | Chưa làm |
 | Chiều | T | Viết mục 9 từ `tong-quan/so-lieu.md` | `viet-muc-thuyet-minh 9` | Mục 9 | Xong nháp (3 phiếu đọc đầy đủ cho nguồn báo chí, dự thảo) |
 | Chiều | T | Thiết kế và viết mục 12 (dữ liệu, gán nhãn, mô hình, chỉ số, đạo đức, bias) | `thiet-ke-phuong-phap`, `viet-muc-thuyet-minh 12` | Mục 12 | Xong nháp |
-| Chiều | P | Gửi `mau-kappa-100.csv` cho một người gán độc lập (file không kèm nhãn), kèm `huong-dan-gan-nhan.md` | | 100 tin người thứ hai gán | Chưa làm |
+| Chiều | P | Gửi `mau-kappa-100.csv` cho Khang gán độc lập (file không kèm nhãn, Khang không xem nhãn gợi ý), kèm `huong-dan-gan-nhan.md` | | 100 tin người thứ hai gán | Chưa làm |
 | Tối | P | Mở notebook trên Colab (bật GPU T4), Run all, tải lên file đã duyệt. Notebook chạy cả 3 mô hình trong khoảng 15 đến 25 phút. Chép `ket-qua-so-bo.json` vào `nghien-cuu/ket-qua/` | `thu-nghiem-so-bo.ipynb` | Kết quả 3 mô hình | Chưa làm |
 
 ### Chủ nhật 08/11
