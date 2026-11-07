@@ -45,9 +45,9 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | Buổi | Luồng | Việc | Công cụ | Sản phẩm | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
 | Sáng | T | Tìm bổ sung tối đa 1 giờ: Google Scholar với "Vietnamese smishing", "Vietnamese SMS scam", "SMS lừa đảo tiếng Việt"; mở bài RIVF 2023 và IDEAL 2024 xem có tách lừa đảo không. Hết giờ thì dừng, câu khoảng trống ghi "trong phạm vi đã tìm" | `tong-quan-tai-lieu` | Nhật ký tìm kiếm, câu khoảng trống đã kiểm | Xong (agent, 4 phiếu mới; còn đọc toàn văn hoang-2022) |
-| Sáng | T | Viết mục 11 và mục 8 từ ma trận tổng quan | `viet-muc-thuyet-minh 11`, `viet-muc-thuyet-minh 8` | Mục 8, 11 | Đang làm (mục 11 xong nháp) |
+| Sáng | T | Viết mục 11 và mục 8 từ ma trận tổng quan | `viet-muc-thuyet-minh 11`, `viet-muc-thuyet-minh 8` | Mục 8, 11 | Xong nháp |
 | Sáng | P | Mở `gan-nhan-so-bo.csv` bằng Excel, lọc `dot = 1`, điền cột `nhan_chot` cho 600 tin. Tin còn sót họ tên thì ghi vào cột `ghi_chu`. Khoảng 1,5 đến 2 giờ | `huong-dan-gan-nhan.md` | 600 tin đã chốt nhãn | Chưa làm |
-| Chiều | T | Viết mục 9 từ `tong-quan/so-lieu.md` | `viet-muc-thuyet-minh 9` | Mục 9 | Chưa làm |
+| Chiều | T | Viết mục 9 từ `tong-quan/so-lieu.md` | `viet-muc-thuyet-minh 9` | Mục 9 | Xong nháp (3 phiếu đọc đầy đủ cho nguồn báo chí, dự thảo) |
 | Chiều | T | Thiết kế và viết mục 12 (dữ liệu, gán nhãn, mô hình, chỉ số, đạo đức, bias) | `thiet-ke-phuong-phap`, `viet-muc-thuyet-minh 12` | Mục 12 | Xong nháp |
 | Chiều | P | Gửi `mau-kappa-100.csv` cho một người gán độc lập (file không kèm nhãn), kèm `huong-dan-gan-nhan.md` | | 100 tin người thứ hai gán | Chưa làm |
 | Tối | P | Mở notebook trên Colab (bật GPU T4), Run all, tải lên file đã duyệt. Notebook chạy cả 3 mô hình trong khoảng 15 đến 25 phút. Chép `ket-qua-so-bo.json` vào `nghien-cuu/ket-qua/` | `thu-nghiem-so-bo.ipynb` | Kết quả 3 mô hình | Chưa làm |
@@ -60,7 +60,7 @@ Hai luồng chạy song song. Luồng T là thuyết minh, luồng P là thử n
 | Sáng | T | Viết mục 13, 14, 15, 16 và mục 1 đến 7, bìa | `viet-muc-thuyet-minh` | Đủ 16 mục | Đang làm (13, 14, 16 xong nháp; 15.3 chờ kết quả; 1-7 chờ loại đề tài, tên Khang, Nhân) |
 | 12:00 | P | Điểm dừng 1 (xem dưới) | | | Chưa làm |
 | Chiều | T | Đưa kết quả thử nghiệm sơ bộ vào thuyết minh (chỗ đặt: Trúc chốt) | | Đoạn kết quả sơ bộ | Chưa làm |
-| Chiều | T | Lập danh sách tài liệu tham khảo, đánh số IEEE theo thứ tự xuất hiện | `trich-dan-ieee` | Mục 99 | Chưa làm |
+| Chiều | T | Lập danh sách tài liệu tham khảo, đánh số IEEE theo thứ tự xuất hiện | `trich-dan-ieee` | Mục 99 | Xong (19 tài liệu, đánh số theo thứ tự xuất hiện) |
 | Chiều | T | Ghép file, chạy phản biện và kiểm tra trích dẫn | `./scripts/build.ps1`, `phan-bien-thuyet-minh`, `kiem-tra-trich-dan` | Danh sách lỗi cần sửa | Chưa làm |
 | Tối | T | Tự viết lại mọi đoạn `[TỰ VIẾT LẠI]` bằng lời của mình. Đây là phần Trúc sẽ bị hỏi khi trình bày | | 0 chỗ `[TỰ VIẾT LẠI]` | Chưa làm |
 
