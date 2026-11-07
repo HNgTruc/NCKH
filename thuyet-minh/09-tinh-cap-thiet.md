@@ -18,10 +18,10 @@ Checklist:
 
 ## 9. Tính cấp thiết của đề tài
 
-[TODO: đoạn 1, thực trạng có số liệu]
+Lừa đảo trên không gian mạng gây thiệt hại lớn ở Việt Nam. Theo Cục Cảnh sát hình sự, Bộ Công an, giai đoạn 2020-2025 cả nước xảy ra 24.295 vụ lừa đảo chiếm đoạt tài sản trên không gian mạng, gây thiệt hại gần 40.000 tỷ đồng; riêng năm 2025 số vụ đã giảm hơn 20% [17]. Dù số vụ giảm, thiệt hại do lừa đảo trực tuyến trong 11 tháng đầu năm 2025 vẫn được ước tính trên 6.000 tỷ đồng [18]. Các số liệu chính thức nhóm tìm được không tách riêng kênh SMS. Tuy vậy, các nghiên cứu trong nước đã nêu lừa đảo là một tác hại của tin nhắn rác [8], [16], và cơ quan quản lý đã đưa tin nhắn có dấu hiệu lừa đảo thành một loại riêng trong dự thảo nghị định thay thế Nghị định 91/2020/NĐ-CP. Dự thảo chia tin nhắn rác thành tin quảng cáo không được người dùng đồng ý, tin kinh doanh vi phạm quy định, tin vi phạm nội dung bị cấm và tin nhắn có dấu hiệu lừa đảo [19].
 
-[TODO: đoạn 2, thiếu sót của nghiên cứu hiện có]
+Các nghiên cứu phân loại SMS tiếng Việt hiện có lại chưa theo cách chia này. Như mục 8 đã phân tích, các nghiên cứu dùng PhoBERT cho SMS tiếng Việt đều phân loại hai lớp, và các bộ dữ liệu xếp tin quảng cáo không thống nhất, lúc vào lớp "rác" [7], lúc vào lớp "hợp lệ" [15]. Vì vậy tin lừa đảo, loại làm người nhận mất tiền, luôn bị gộp với một loại tin ít nguy hiểm hơn, và bộ lọc chỉ báo được tin "rác" hay "không rác". Bài tổng quan trong nước cũng nhận xét rằng cảnh báo hai mức như vậy là chưa đủ [16].
 
-[TODO: đoạn 3, hướng giải quyết]
+Đề tài giải quyết vấn đề này bằng cách gán lại ba nhãn lừa đảo, quảng cáo và bình thường cho một mẫu SMS tiếng Việt thật lấy từ bộ dữ liệu công khai [15], với hướng dẫn gán nhãn viết sẵn và độ đồng thuận giữa hai người gán đo bằng Cohen's kappa. Trên mẫu này, đề tài so sánh PhoBERT, ViSoBERT và mô hình cơ sở TF-IDF kết hợp Logistic Regression bằng F1 của từng lớp, tỉ lệ nhầm giữa tin lừa đảo và tin quảng cáo, và mức giảm F1 khi tin bị bỏ dấu hoặc chèn ký tự, là hai cách kẻ gửi rác hay dùng để né bộ lọc [3].
 
-[TODO: đoạn 4, đóng góp cho ngành, cho trường, cho xã hội]
+Về đóng góp, với ngành công nghệ thông tin, đề tài cung cấp một bộ nhãn ba lớp kèm hướng dẫn gán nhãn có đo độ đồng thuận và kết quả so sánh ba mô hình trên cùng bộ nhãn, làm điểm xuất phát cho các nghiên cứu phân loại tin lừa đảo tiếng Việt. Với Trường Đại học Sài Gòn, đề tài là một sản phẩm nghiên cứu khoa học của sinh viên Khoa Công nghệ Thông tin, kèm mã nguồn chạy lại được, có thể dùng làm ví dụ thực hành khi dạy phân loại văn bản tiếng Việt. Với xã hội, kết quả cho biết mô hình nào phân biệt được tin lừa đảo với tin quảng cáo, là cơ sở để các bộ lọc tin nhắn cảnh báo riêng tin lừa đảo thay vì chỉ gắn nhãn "rác", phù hợp với cách chia trong dự thảo nghị định [19]. [TỰ VIẾT LẠI]
