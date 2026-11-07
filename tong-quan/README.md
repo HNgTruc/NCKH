@@ -59,3 +59,10 @@ Ghi mỗi lần tìm để mục 12 và buổi trình bày có thể nói rõ c�
 | 04/11/2026 | Huỳnh Ngọc Trúc | Công cụ tìm web (Claude) | Vietnamese teencode OR "without diacritics" text classification PhoBERT robustness social media | 10 | 0 mới |
 | 04/11/2026 | Huỳnh Ngọc Trúc | Công cụ tìm web (Claude) | Vietnamese diacritic restoration deep learning transformer paper | 10 | 0 (không sát đề tài) |
 | 04/11/2026 | Huỳnh Ngọc Trúc | dblp, SCImago, CORE portal | Vietnamese spam; tra hạng nơi đăng | Bị chặn truy cập tự động (lỗi 403) | Cần tra tay |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Công cụ tìm web (Claude) | Vietnamese smishing detection SMS dataset; Vietnamese SMS scam detection multi-class spam advertising fraud; phân loại tin nhắn lừa đảo tiếng Việt học máy | 10 mỗi lần | 0 |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Google Scholar (Claude) | Vietnamese smishing; Vietnamese SMS scam detection | 10 mỗi lần (khoảng 61 và 202) | 1 (VIESpam 2025), thêm ứng viên MLTEA 2026 |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Google Scholar (Claude) | "tin nhắn lừa đảo" phân loại; "phân lớp đa nhãn" "tin nhắn SMS" | 8; 1 | 1 (Hoàng Thị Hè 2022) |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Google Scholar (Claude) | Vietnamese SMS phishing OR smishing dataset PhoBERT (từ 2023); "multi-class" OR "three classes" Vietnamese SMS spam advertising fraud | 20; 10 | 0 bài báo, 1 tổng quan preprint (Pritom 2026) vào ứng viên |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Semantic Scholar, OpenAlex, Crossref, SpringerLink (Claude) | Tra DOI RIVF 2023, IDEAL 2024, VIESpam; OpenAlex "Vietnamese SMS spam", "Vietnamese smishing OR SMS phishing OR scam OR fraud" | 25 mỗi lần OpenAlex | 3 phiếu chỉ đọc tóm tắt (RIVF 2023, IDEAL 2024, VIESpam) |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Tạp chí Phát triển KHCN ĐHQG TP.HCM, VJOL (Claude) | SMS spam; tin nhắn; lừa đảo tin nhắn; SMS | 0; 0; 0; 25 (45) | 0 bài phân loại. 1 bài ngành luật vào ứng viên mục 9 |
+| 06/11/2026 | Huỳnh Ngọc Trúc | Công cụ tìm web (Claude) | FAIR, SoICT, KSE, NICS kèm SMS spam/scam tiếng Việt | 10-15 mỗi lần | 0. dblp, IEEE Xplore, CORE chặn truy cập tự động nên chưa duyệt từng kỷ yếu. Chi tiết ở cuối `ma-tran-tong-quan.md` |
