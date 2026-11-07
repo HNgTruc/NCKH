@@ -25,12 +25,12 @@ Checklist:
 
 Khách thể nghiên cứu: tin nhắn SMS tiếng Việt gửi tới người dùng điện thoại di động tại Việt Nam.
 
-Mẫu nghiên cứu: 600 tin chọn ngẫu nhiên phân tầng từ bộ SMS công khai trên Hugging Face, bộ này còn 2.629 tin sau khi bỏ tin trùng [15]. Cách chọn và gán nhãn trình bày ở mục 12.
+Mẫu nghiên cứu: 600 tin chọn ngẫu nhiên phân tầng từ bộ SMS công khai trên Hugging Face gồm 2.991 dòng [15]; sau khi bỏ tin trùng nguyên văn, nhóm đếm được 2.629 tin. Cách chọn và gán nhãn trình bày ở mục 12.
 
 ### 11.2. Phạm vi nghiên cứu
 
 | Phạm vi | Giới hạn |
 | --- | --- |
-| Không gian | Tin nhắn SMS gửi tới thuê bao di động tại Việt Nam, viết bằng tiếng Việt, gồm cả tin có dấu, không dấu và tin bị viết biến dạng. Không xét tin viết bằng tiếng nước ngoài |
+| Không gian | Tin nhắn SMS gửi tới thuê bao di động tại Việt Nam, viết bằng tiếng Việt, gồm cả tin có dấu, không dấu và tin bị viết biến dạng. Tin viết hoàn toàn bằng tiếng nước ngoài, nếu có trong mẫu, được gán nhãn không rõ và loại khỏi huấn luyện |
 | Thời gian | Tin nhắn được đóng góp vào bộ dữ liệu công khai từ ngày 28/05/2026 đến ngày 03/08/2026, theo cột ngày của bộ dữ liệu. Cột này có thể là ngày đóng góp chứ không phải ngày nhận tin, vì 627 dòng cùng mang ngày 03/08/2026, trùng ngày đăng bộ dữ liệu. Kết luận của đề tài chỉ áp dụng cho kiểu tin lừa đảo trong khoảng thời gian này, vì kịch bản lừa đảo thay đổi theo thời gian |
 | Nội dung | Đề tài làm: gán ba nhãn lừa đảo, quảng cáo, bình thường dựa trên nội dung văn bản của tin; so sánh ba mô hình đã nêu; đánh giá trên tin bỏ dấu và tin chèn ký tự; đo trên 600 tin trong thời gian học kỳ (09/2026 đến 11/2026). Đề tài không làm: gán nhãn toàn bộ 2.629 tin, thu thập thêm tin nhắn, xây bản demo (ba việc này để ở hướng phát triển, mục 15); tin trên Zalo, Messenger và mạng xã hội khác, email, hình ảnh, giọng nói, cuộc gọi; không dùng số điện thoại hay tên thương hiệu người gửi, thời điểm gửi; không mở đường link trong tin để kiểm tra trang đích; không xét người nhận đã đồng ý nhận quảng cáo hay chưa; không truy vết người gửi; không tích hợp vào điện thoại hay hệ thống của nhà mạng |

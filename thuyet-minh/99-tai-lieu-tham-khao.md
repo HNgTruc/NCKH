@@ -38,7 +38,7 @@ Mẫu định dạng (từ slide Chương 3, bổ sung theo IEEE):
 
 [14] Hoàng Thị Hè, Đào Xuân Dương, và Lê Thị Nhung, "Một số phương pháp phân lớp đa nhãn và ứng dụng phân loại tin nhắn SMS tiếng Việt," Tạp chí Khoa học Nông nghiệp Việt Nam, vol. 20, no. 12, pp. 1672–1683, 2022.
 
-[15] N. T. T. Tran, H. K. Le, M. T. Nguyen, V. T. Nguyen, and H. D. Mai, "Vietnamese SMS Dataset with Quality Assurance," Hugging Face, 2026. [Online]. Available: https://huggingface.co/datasets/trannguyenthaituan/vietnamese_sms_dataset (accessed Nov. 6, 2026).
+[15] N. T. T. Tran, H. K. Le, M. T. Nguyen, V. T. Nguyen, and H. D. Mai, "Vietnamese SMS Dataset with Quality Assurance," Hugging Face, 2026. [Online]. Available: https://huggingface.co/datasets/trannguyenthaituan/vietnamese_sms_dataset (truy cập 06/11/2026).
 
 [16] Vũ Duy Hiến, Chu Văn Huy, Bùi Thị Hồng Nhung, và Lê Thị Hồng Nhung, "Nghiên cứu bài toán phát hiện tin nhắn rác trên thiết bị di động và một số vấn đề gợi mở," Tạp chí Kinh tế - Luật và Ngân hàng, vol. 26, no. 7 (266), pp. 65–78, Jul. 2024, doi: 10.59276/JELB.2024.07CD.2763.
 
@@ -47,3 +47,5 @@ Mẫu định dạng (từ slide Chương 3, bổ sung theo IEEE):
 [18] HM, "Dự báo năm 2026, mức độ tinh vi của lừa đảo trực tuyến gia tăng," Báo Điện tử Chính phủ, 07/01/2026. [Online]. Available: https://baochinhphu.vn/du-bao-nam-2026-muc-do-tinh-vi-cua-cac-hinh-thuc-lua-dao-truc-tuyen-se-tang-102260107101756364.htm (truy cập 08/11/2026).
 
 [19] Bộ Công an, "Bản so sánh dự thảo Nghị định thay thế Nghị định số 91/2020/NĐ-CP của Chính phủ về chống tin nhắn rác, thư điện tử rác, cuộc gọi rác," dự thảo lấy ý kiến, tháng 9/2026. [Online]. Available: https://bocongan.gov.vn/media/bca-media/library-20260909084715-c3d4dec4-0f78-459d-96de-3293d10b69b5-4-ban-so-sanh-du-thao.docx (truy cập 08/11/2026).
+
+[20] VinAI Research, "PhoBERT: Pre-trained language models for Vietnamese," GitHub. [Online]. Available: https://github.com/VinAIResearch/PhoBERT (truy cập 04/11/2026).

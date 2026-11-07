@@ -22,7 +22,7 @@ Checklist:
 
 ### 12.1. Cách tiếp cận
 
-Đề tài là nghiên cứu định lượng, ứng dụng, theo thiết kế thực nghiệm có đối chứng. Biến độc lập là mô hình phân loại (TF-IDF kết hợp Logistic Regression, PhoBERT, ViSoBERT) và dạng văn bản của tập kiểm tra (nguyên gốc, bỏ dấu thanh, chèn ký tự). Biến phụ thuộc là precision, recall, F1 của từng lớp, F1 trung bình macro và tỉ lệ nhầm giữa tin lừa đảo và tin quảng cáo. Mô hình TF-IDF kết hợp Logistic Regression là nhóm đối chứng. Dữ liệu, cách chia tập, random seed và số vòng huấn luyện được giữ như nhau cho mọi mô hình, để chênh lệch kết quả chỉ đến từ mô hình. CH1 và CH2 được trả lời bằng thống kê mô tả.
+Đề tài là nghiên cứu định lượng, ứng dụng, theo thiết kế thực nghiệm có đối chứng. Biến độc lập là mô hình phân loại (TF-IDF kết hợp Logistic Regression, PhoBERT, ViSoBERT) và dạng văn bản của tập kiểm tra (nguyên gốc, bỏ dấu thanh, chèn ký tự, xóa thẻ quảng cáo). Biến phụ thuộc là precision, recall, F1 của từng lớp, F1 trung bình macro và tỉ lệ nhầm giữa tin lừa đảo và tin quảng cáo. Mô hình TF-IDF kết hợp Logistic Regression là nhóm đối chứng. Dữ liệu, cách chia tập và random seed được giữ như nhau cho mọi mô hình, hai mô hình transformer dùng cùng cấu hình huấn luyện, để chênh lệch kết quả chỉ đến từ mô hình. CH1 và CH2 được trả lời bằng thống kê mô tả.
 
 Quy trình đi theo năm giai đoạn xử lý thông tin: thu thập (tải bộ dữ liệu công khai), làm sạch (bỏ tin trùng, kiểm tra ẩn danh), gán nhãn, biểu diễn đặc trưng (TF-IDF hoặc tách từ cho PhoBERT), mô hình hóa, rồi đánh giá và trình bày kết quả bằng bảng và ma trận nhầm lẫn. [TỰ VIẾT LẠI]
 
@@ -36,13 +36,13 @@ Nhóm chọn bộ dữ liệu này vì đây là bộ SMS tiếng Việt công k
 
 ### 12.3. Gán nhãn và chọn mẫu
 
-Bộ nhãn gồm `LUA_DAO` (tin cố ý lừa người nhận đưa tiền, mật khẩu, mã OTP, thông tin cá nhân hoặc bấm link giả), `QUANG_CAO` (tin quảng cáo, khuyến mãi không giả danh và không đòi thông tin nhạy cảm) và `BINH_THUONG` (tin cá nhân, thông báo dịch vụ thật). Tin không đủ căn cứ được gán `KHONG_RO` và loại khỏi huấn luyện. Hướng dẫn gán nhãn có sáu quy tắc cho các trường hợp khó: tin cờ bạc trực tuyến và tin hẹn hò hứa trả "trợ cấp" là `LUA_DAO`; tin của nhà mạng gán theo nội dung, không theo thẻ (QC) hay (TB) ở đầu tin. Nhãn chỉ dựa vào nội dung, không xét người nhận đã đồng ý nhận quảng cáo hay chưa.
+Bộ nhãn gồm `LUA_DAO` (tin cố ý lừa người nhận đưa tiền, mật khẩu, mã OTP, thông tin cá nhân hoặc bấm link giả), `QUANG_CAO` (tin quảng cáo, khuyến mãi không giả danh và không đòi thông tin nhạy cảm) và `BINH_THUONG` (tin cá nhân, thông báo dịch vụ thật). Tin không đủ căn cứ được gán `KHONG_RO` và loại khỏi huấn luyện. Hướng dẫn gán nhãn có sáu quy tắc cho các trường hợp khó: tin cờ bạc trực tuyến và tin hẹn hò hứa trả "trợ cấp" là `LUA_DAO`, vì các tin này dụ người nhận nạp tiền hoặc chuyển sang kênh chat riêng (dự thảo nghị định có một loại riêng cho tin vi phạm nội dung bị cấm [19]; nhóm không tách loại này, đây là quyết định của nhóm và là một hạn chế khi đối chiếu với dự thảo); tin của nhà mạng gán theo nội dung, không theo thẻ (QC) hay (TB) ở đầu tin. Nhãn chỉ dựa vào nội dung, không xét người nhận đã đồng ý nhận quảng cáo hay chưa.
 
 Chọn mẫu theo ba bước:
 
 1. Script gợi ý một nhãn cho mỗi tin bằng quy tắc từ khóa (thẻ QC, từ "khuyến mãi", "soạn ... gửi", mã OTP) và ghi lý do.
 2. Script chọn ngẫu nhiên 200 tin cho mỗi nhãn gợi ý, random seed 42, được 600 tin. Chọn đều ba nhóm để lớp nào cũng đủ mẫu đánh giá. Vì cách chọn này làm tỉ lệ lớp trong mẫu khác tỉ lệ trong cả bộ, CH2 được ước lượng có trọng số: mỗi tin nhân với số tin của nhóm gợi ý trong cả bộ chia cho số tin của nhóm đó trong mẫu.
-3. Người gán thứ nhất đọc và chốt nhãn cho cả 600 tin, có xem nhãn gợi ý. Người gán thứ hai gán độc lập 100 tin trong số đó (34, 34 và 32 tin theo ba nhãn gợi ý), không được xem nhãn gợi ý lẫn nhãn của người thứ nhất.
+3. Người gán thứ nhất (Huỳnh Ngọc Trúc) đọc và chốt nhãn cho cả 600 tin, có xem nhãn gợi ý. Người gán thứ hai (Khang) gán độc lập 100 tin trong số đó (34, 34 và 32 tin theo ba nhãn gợi ý), không được xem nhãn gợi ý lẫn nhãn của người thứ nhất.
 
 Độ đồng thuận đo bằng Cohen's kappa trên 100 tin, tính cả nhãn `KHONG_RO`. Kappa đo mức hai người đồng ý sau khi trừ phần trùng do may mắn. Ngưỡng chấp nhận là κ ≥ 0,60. Nghiên cứu ViSpamReviews đặt ngưỡng trên 0,5 và đạt 0,72 sau một vòng huấn luyện lại người gán [6]. Đề tài đặt ngưỡng chặt hơn, vì ranh giới giữa tin lừa đảo và tin quảng cáo chính là điểm mới cần chứng minh. Các tin bất đồng được hai người xem lại, ghi lý do và bổ sung quy tắc vào hướng dẫn. Nếu kappa dưới 0,60, nhóm sửa hướng dẫn và báo đúng con số đạt được. [TỰ VIẾT LẠI]
 
@@ -62,16 +62,17 @@ Công cụ: Python trên Google Colab với GPU T4 miễn phí; thư viện pand
 
 Chỉ số đánh giá là precision, recall và F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn, báo dạng trung bình ± độ lệch chuẩn qua 5 phần. Accuracy chỉ là chỉ số phụ: một mô hình đoán mọi tin là "bình thường" vẫn có accuracy cao khi tin bình thường chiếm đa số, trong khi không bắt được tin lừa đảo nào. Precision lớp lừa đảo cho biết trong các tin mô hình báo là lừa đảo, bao nhiêu tin đúng là lừa đảo. Recall lớp lừa đảo cho biết trong các tin lừa đảo thật, mô hình bắt được bao nhiêu. CH4 lấy từ ma trận nhầm lẫn: số tin lừa đảo bị đoán thành quảng cáo chia cho tổng số tin lừa đảo, và ngược lại. [TỰ VIẾT LẠI]
 
-Với MT3, tập kiểm tra của mỗi phần được biến đổi theo hai cách, còn mô hình vẫn huấn luyện trên tin gốc:
+Với MT3, tập kiểm tra của mỗi phần được biến đổi theo ba cách, còn mô hình vẫn huấn luyện trên tin gốc:
 
 - Bỏ dấu thanh: chuyển toàn bộ chữ có dấu thành không dấu, ví dụ "Ngân hàng" thành "Ngan hang".
 - Chèn ký tự: biến dạng ngẫu nhiên khoảng 20% số từ theo một trong ba cách kẻ gửi rác hay dùng, gồm xen dấu chấm ("n.g.â.n"), lặp ký tự xen chữ hoa ("nHhậận"), thay chữ bằng số giống hình ("ng4n h4ng"). Thẻ ẩn danh và đường link không bị biến đổi. Random seed cố định, nên mọi mô hình nhận đúng một bản biến đổi.
+- Xóa thẻ: xóa các thẻ (QC), [QC], (TB), [TB] ở đầu tin. Bước này kiểm tra mô hình có chỉ học thẻ thay vì nội dung hay không, vì tin quảng cáo của nhà mạng thường mang thẻ (QC) và script gợi ý nhãn cũng dựa vào thẻ này.
 
 Mức giảm F1 lớp lừa đảo bằng F1 trên tập gốc trừ F1 trên tập đã biến đổi. Để đánh giá H1 và H2, nhóm so ghép cặp theo từng phần: H1 được ủng hộ khi F1 lớp lừa đảo của PhoBERT cao hơn của mô hình cơ sở ở đa số trong 5 phần và chênh lệch trung bình lớn hơn 0. H2 đánh giá tương tự với mức giảm khi bỏ dấu của PhoBERT so với ViSoBERT. Chỉ có 5 phần nên đây là bằng chứng sơ bộ, chưa phải kiểm định thống kê. Kiểm định bootstrap trên tập kiểm tra lớn hơn để ở hướng phát triển. [TỰ VIẾT LẠI]
 
 ### 12.5. Đạo đức nghiên cứu và kiểm soát sai lệch
 
-Dữ liệu là bộ công khai theo giấy phép CC BY 4.0, đã được tác giả ẩn danh. Nhóm ghi nguồn đầy đủ và kiểm tra ẩn danh thêm hai lượt: script quét lại số điện thoại và dãy số dài còn sót (thay thêm 110 chỗ), và người gán đánh dấu tin còn sót họ tên để xóa. Khi kiểm tra ngẫu nhiên 12 tin, nhóm thấy 1 tin còn họ tên đầy đủ, nên các file dữ liệu chưa được đưa lên kho mã nguồn công khai. Đề tài không công bố nguyên văn tin nhắn; nếu công bố nhãn thì chỉ công bố mã tin kèm nhãn ba lớp. Người gán không bấm link và không gọi lại số điện thoại trong tin. PhoBERT-base dùng giấy phép MIT theo trang GitHub của tác giả. Bài gốc của ViSoBERT ghi mô hình chỉ dùng cho mục đích nghiên cứu [5], nên đề tài chỉ dùng ViSoBERT để nghiên cứu. Kết quả đánh giá trên tin chèn ký tự có thể bị dùng ngược để soạn tin né bộ lọc (tính lưỡng dụng), nên nhóm chỉ báo số liệu tổng hợp và không phát hành công cụ chèn ký tự riêng. [TỰ VIẾT LẠI]
+Dữ liệu là bộ công khai theo giấy phép CC BY 4.0, đã được tác giả ẩn danh. Nhóm ghi nguồn đầy đủ và kiểm tra ẩn danh thêm hai lượt: script quét lại số điện thoại và dãy số dài còn sót (thay thêm 110 chỗ), và người gán đánh dấu tin còn sót họ tên để xóa. Khi kiểm tra ngẫu nhiên 12 tin, nhóm thấy 1 tin còn họ tên đầy đủ, nên các file dữ liệu chưa được đưa lên kho mã nguồn công khai. Đề tài không công bố nguyên văn tin nhắn; đề tài chỉ công bố mã tin kèm nhãn ba lớp. Người gán không bấm link và không gọi lại số điện thoại trong tin. PhoBERT-base được tác giả phát hành theo giấy phép MIT [20]. Bài gốc của ViSoBERT ghi mô hình chỉ dùng cho mục đích nghiên cứu [5], nên đề tài chỉ dùng ViSoBERT để nghiên cứu. Kết quả đánh giá trên tin chèn ký tự có thể bị dùng ngược để soạn tin né bộ lọc (tính lưỡng dụng), nên nhóm chỉ báo số liệu tổng hợp và không phát hành công cụ chèn ký tự riêng. [TỰ VIẾT LẠI]
 
 | Sai lệch (bias) | Biểu hiện trong đề tài | Cách giảm hoặc cách báo |
 | --- | --- | --- |
@@ -82,5 +83,6 @@ Dữ liệu là bộ công khai theo giấy phép CC BY 4.0, đã được tác 
 | Nhãn gốc hai lớp | Nhãn "rác" của bộ gốc gộp tin lừa đảo với tin rác khác | Gán lại từng tin, báo bảng chuyển nhãn (CH2) |
 | Đo lường (measurement) | Mỗi lần chạy tiền xử lý một kiểu | Một notebook chung, cố định random seed, ghi phiên bản thư viện |
 | Lịch sử (historical) | Tin chỉ trong khoảng 2 tháng năm 2026, ngày ghi trong bộ có thể là ngày đóng góp | Chỉ kết luận cho khoảng thời gian này |
+| Thẻ trùng nhãn | Tin quảng cáo nhà mạng thường có thẻ (QC); script cũng dùng thẻ này để gợi ý nhãn, nên mô hình có thể chỉ học thẻ | Báo tỉ lệ tin quảng cáo có thẻ; đo lại F1 trên tập kiểm tra đã xóa thẻ |
 | Văn hóa, cách viết (cultural) | Tin không dấu, teencode, chèn ký tự | Giữ nguyên trong dữ liệu; đo riêng ở MT3 |
 | Dấu thanh trùng nhãn | Ở nghiên cứu trước, tin rác phần lớn không dấu còn tin hợp lệ có dấu, nên mô hình có thể học dấu thay vì nội dung [10] | Báo tỉ lệ tin không dấu theo từng nhãn; đo F1 trên bản bỏ dấu |

@@ -20,12 +20,12 @@ Checklist:
 
 ### 10.1. Mục tiêu tổng quát
 
-Xây dựng và đánh giá mô hình phân loại tin nhắn SMS tiếng Việt thành ba nhóm lừa đảo, quảng cáo và bình thường dựa trên PhoBERT, để tách tin lừa đảo khỏi tin rác quảng cáo.
+Tinh chỉnh và đánh giá mô hình phân loại tin nhắn SMS tiếng Việt thành ba nhóm lừa đảo, quảng cáo và bình thường dựa trên PhoBERT, để tách tin lừa đảo khỏi tin rác quảng cáo.
 
 ### 10.2. Mục tiêu cụ thể
 
 - MT1. Gán lại ba nhãn lừa đảo, quảng cáo, bình thường cho 600 tin SMS chọn ngẫu nhiên phân tầng từ một bộ SMS tiếng Việt công khai chỉ có hai nhãn [15], theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán độc lập trên 100 tin đo bằng Cohen's kappa đạt từ 0,60 trở lên.
-- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên 600 tin đã gán nhãn bằng kiểm định chéo 5 phần, đo precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
+- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên các tin đã gán nhãn của mẫu 600 tin (trừ tin không đủ căn cứ gán nhãn) bằng kiểm định chéo 5 phần, đo precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
 - MT3. Đánh giá mức giảm F1 lớp lừa đảo của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh hoặc bị chèn ký tự, so với tin nguyên gốc.
 
 ### 10.3. Câu hỏi nghiên cứu
