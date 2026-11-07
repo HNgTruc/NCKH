@@ -24,7 +24,7 @@ Loại đề tài: [TODO: A1 / B1 / B2 / C, xem docs/ke-hoach/gia-dinh.md dòng 
 
 ## 3. Thời gian thực hiện
 
-[TODO: số] tháng, từ [TODO: tháng/năm] đến [TODO: tháng/năm].
+03 tháng, từ tháng 9/2026 đến tháng 11/2026.
 
 ## 4. Chủ nhiệm đề tài
 

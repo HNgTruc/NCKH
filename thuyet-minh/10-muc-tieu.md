@@ -24,24 +24,23 @@ Xây dựng và đánh giá mô hình phân loại tin nhắn SMS tiếng Việt
 
 ### 10.2. Mục tiêu cụ thể
 
-- MT1. Xây dựng bộ dữ liệu SMS tiếng Việt ba nhãn lừa đảo, quảng cáo, bình thường bằng cách gán lại nhãn cho bộ SMS công khai hai nhãn (2.629 tin sau khi bỏ trùng) và bổ sung tin nhắn tự thu thập đã ẩn danh, theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán đo bằng Cohen's kappa đạt ngưỡng nêu ở mục 12.
-- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên cùng tập kiểm tra bằng precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
-- MT3. Đánh giá mức giảm F1 của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh hoặc bị chèn ký tự, so với tin nguyên gốc.
-- MT4. Xây dựng bản demo web dùng mô hình có F1 lớp lừa đảo cao nhất ở MT2: người dùng dán một tin nhắn vào và nhận lại nhãn dự đoán kèm xác suất của từng nhãn.
+- MT1. Gán lại ba nhãn lừa đảo, quảng cáo, bình thường cho 600 tin SMS chọn ngẫu nhiên phân tầng từ một bộ SMS tiếng Việt công khai chỉ có hai nhãn [15], theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán độc lập trên 100 tin đo bằng Cohen's kappa đạt từ 0,60 trở lên.
+- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên 600 tin đã gán nhãn bằng kiểm định chéo 5 phần, đo precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
+- MT3. Đánh giá mức giảm F1 lớp lừa đảo của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh hoặc bị chèn ký tự, so với tin nguyên gốc.
 
 ### 10.3. Câu hỏi nghiên cứu
 
 | # | Câu hỏi | Ứng với |
 | --- | --- | --- |
 | CH1 | Theo hướng dẫn gán nhãn của đề tài, hai người gán độc lập đồng thuận ở mức nào (Cohen's kappa) khi chia tin nhắn thành lừa đảo, quảng cáo và bình thường, và loại tin nào gây bất đồng nhiều nhất? | MT1 |
-| CH2 | Trên cùng tập kiểm tra, precision, recall và F1 của lớp lừa đảo ở PhoBERT, ViSoBERT và mô hình cơ sở TF-IDF kết hợp Logistic Regression chênh nhau bao nhiêu? | MT2 |
-| CH3 | Ở từng mô hình, bao nhiêu phần trăm tin lừa đảo bị dự đoán thành tin quảng cáo, và bao nhiêu phần trăm tin quảng cáo bị dự đoán thành tin lừa đảo? | MT2 |
-| CH4 | F1 lớp lừa đảo của mỗi mô hình giảm bao nhiêu điểm khi tin nhắn bị bỏ dấu thanh hoặc bị chèn ký tự, và mô hình nào giảm ít nhất? | MT3 |
-| CH5 | Khi chạy trong bản demo trên máy tính không có GPU, mô hình được chọn cần bao lâu để phân loại một tin nhắn? | MT4 |
+| CH2 | Tin mà bộ dữ liệu gốc gán nhãn "hợp lệ" và tin gán nhãn "rác hoặc lừa đảo" chuyển sang ba nhãn mới theo tỉ lệ nào? | MT1 |
+| CH3 | Precision, recall và F1 của lớp lừa đảo ở PhoBERT, ViSoBERT và mô hình cơ sở TF-IDF kết hợp Logistic Regression chênh nhau bao nhiêu? | MT2 |
+| CH4 | Ở từng mô hình, bao nhiêu phần trăm tin lừa đảo bị dự đoán thành tin quảng cáo, và bao nhiêu phần trăm tin quảng cáo bị dự đoán thành tin lừa đảo? | MT2 |
+| CH5 | F1 lớp lừa đảo của mỗi mô hình giảm bao nhiêu điểm khi tin nhắn bị bỏ dấu thanh hoặc bị chèn ký tự, và mô hình nào giảm ít nhất? | MT3 |
 
 ### 10.4. Giả thuyết nghiên cứu
 
-- H1. Trên cùng tập kiểm tra, PhoBERT đạt F1 lớp lừa đảo cao hơn mô hình cơ sở TF-IDF kết hợp Logistic Regression.
+- H1. PhoBERT đạt F1 lớp lừa đảo cao hơn mô hình cơ sở TF-IDF kết hợp Logistic Regression.
 - H2. Khi bỏ dấu thanh toàn bộ tập kiểm tra, F1 lớp lừa đảo của ViSoBERT giảm ít hơn của PhoBERT.
 
-H2 dựa trên kết quả đã công bố của ViSoBERT với dữ liệu đánh giá sản phẩm tiếng Việt [TODO: số trích dẫn của nguyen-2023-visobert sau khi đánh số IEEE]. Dữ liệu đó không phải SMS, nên đề tài kiểm tra lại trên tin nhắn.
+H2 dựa trên kết quả đã công bố của ViSoBERT với dữ liệu đánh giá sản phẩm tiếng Việt [5]. Dữ liệu đó không phải SMS, nên đề tài kiểm tra lại trên tin nhắn. Với 600 tin và 5 phần kiểm định chéo, kết quả cho H1 và H2 chỉ là bằng chứng sơ bộ, chưa đủ để kiểm định thống kê.
