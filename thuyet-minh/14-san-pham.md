@@ -14,10 +14,10 @@ Checklist:
 
 | STT | Chủng loại sản phẩm | Yêu cầu về chất lượng cần đạt của sản phẩm | Số lượng |
 | --- | --- | --- | --- |
-| 1 | Bài báo khoa học | [TODO] | 01 |
-| 2 | Bài báo khoa học | [TODO] | 01 |
-| 3 | Bộ dữ liệu tin nhắn SMS tiếng Việt đã gán nhãn và ẩn danh | [TODO: số mẫu, số nhãn, có hướng dẫn gán nhãn và độ đồng thuận] | 01 |
-| 4 | Mô hình và mã nguồn | [TODO] | 01 |
-| 5 | Bản demo | [TODO] | 01 |
+| 1 | Bài báo khoa học | Bản thảo báo cáo kết quả gán nhãn ba lớp và so sánh ba mô hình, gửi hội nghị sinh viên nghiên cứu khoa học có phản biện [TODO: Trúc chọn nơi gửi] | 01 bản thảo |
+| 2 | Bài báo khoa học | Không đăng ký trong thời gian 3 tháng của đề tài. Bài báo đầy đủ chỉ viết sau khi gán nhãn toàn bộ bộ dữ liệu (mục 15.2) | 0 |
+| 3 | Mẫu dữ liệu SMS tiếng Việt gán ba nhãn | 600 tin gán nhãn lừa đảo, quảng cáo, bình thường; có hướng dẫn gán nhãn kèm quy tắc và ví dụ; Cohen's kappa giữa hai người gán trên 100 tin được báo cáo, ngưỡng chấp nhận 0,60; chỉ công bố mã tin kèm nhãn, không công bố nguyên văn tin | 01 |
+| 4 | Mã nguồn | Script gán nhãn sơ bộ và notebook đánh giá ba mô hình, chạy lại được trên Google Colab, cố định random seed, ghi phiên bản thư viện | 01 |
+| 5 | Báo cáo kết quả thử nghiệm | Bảng precision, recall, F1 từng lớp và ma trận nhầm lẫn của ba mô hình; mức giảm F1 khi bỏ dấu và chèn ký tự | 01 |
 
 Cam kết của chủ nhiệm đề tài: kết quả thực hiện đề tài này không trùng lặp với sản phẩm, công trình khoa học khác đã công bố.

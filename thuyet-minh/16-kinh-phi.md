@@ -10,14 +10,21 @@ Checklist:
 
 ## 16. Kinh phí thực hiện đề tài NCKH của sinh viên
 
-Tổng kinh phí: [TODO] đồng (theo loại đề tài đăng ký). Trong đó ngân sách nhà nước: [TODO] đồng. Các nguồn kinh phí khác: 0 đồng.
+Tổng kinh phí: 3.000.000 đồng. Trong đó ngân sách nhà nước: 3.000.000 đồng. Các nguồn kinh phí khác: 0 đồng.
 
-Số tiền bằng chữ: [TODO].
+Số tiền bằng chữ: Ba triệu đồng.
 
-| TT | Nội dung chi | Kinh phí (đồng) | Gắn với công việc |
+Các công cụ chính (Google Colab bản miễn phí, PhoBERT, ViSoBERT, thư viện Python mã nguồn mở, bộ dữ liệu CC BY 4.0) không mất phí, nên kinh phí chủ yếu là tiền công và in ấn.
+
+| TT | Nội dung chi | Kinh phí (đồng) | Gắn với công việc ở 13.2 |
 | --- | --- | --- | --- |
-| 1 | Tiền công thực hiện đề tài: thù lao chủ nhiệm, quản lý chung; điều tra khảo sát ban đầu, xây dựng đề cương, thuyết minh; tổng hợp tài liệu, viết báo cáo | [TODO] | 1, 7 |
-| 2 | Thuê khoán chuyên môn: thuê nhập liệu, xử lý số liệu; các công việc thuê khác | [TODO] | 3 |
-| 3 | Nguyên vật liệu: tài liệu tham khảo, nguyên vật liệu khác phục vụ nghiên cứu | [TODO] | 5 |
-| 4 | Chi phí khác: hội nghị, in ấn, photo, thuê phương tiện | [TODO] | 7 |
-| | Tổng số | [TODO] | |
+| 1 | Tiền công thực hiện đề tài | 1.500.000 | |
+| | Thù lao chủ nhiệm đề tài, quản lý chung | 500.000 | 6 |
+| | Xây dựng đề cương, thuyết minh | 500.000 | 2, 6 |
+| | Tổng hợp tài liệu, viết báo cáo | 500.000 | 2, 7 |
+| 2 | Thuê khoán chuyên môn | 1.000.000 | |
+| | Thuê người gán nhãn độc lập 100 tin và kiểm tra ẩn danh dữ liệu | 500.000 | 4 |
+| | Thuê GPU đám mây dự phòng khi bản miễn phí bị giới hạn | 500.000 | 5 |
+| 3 | Mua nguyên vật liệu | 0 | |
+| 4 | Chi phí khác: in ấn, photo thuyết minh và báo cáo | 500.000 | 7 |
+| | Tổng số | 3.000.000 | |
