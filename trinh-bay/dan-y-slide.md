@@ -11,7 +11,7 @@
 | 5 | Mục tiêu và câu hỏi | MT1 đến MT4, 5 câu hỏi | 10 | 1:00 | C |
 | 6 | Đối tượng, phạm vi | Làm gì, không làm gì | 11 | 0:40 | C |
 | 7 | Phương pháp | Sơ đồ quy trình: thu thập, ẩn danh, gán nhãn, mô hình, đánh giá | 12 | 2:00 | C |
-| 8 | Tiến độ | Gantt 6 tháng | 13.2 | 0:40 | A |
+| 8 | Tiến độ | Gantt 2 tháng | 13.2 | 0:40 | A |
 | 9 | Sản phẩm, ứng dụng | Bảng sản phẩm, người dùng | 14, 15 | 0:40 | A |
 | 10 | Đạo đức và rủi ro | Ẩn danh, bias, phương án dự phòng | 12.5 | 0:40 | B |
 | 11 | Kết | Câu hỏi | | 0:20 | A |
