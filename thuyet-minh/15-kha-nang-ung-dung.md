@@ -50,6 +50,6 @@ H2 đúng chiều nhưng chưa chắc chắn. Khi bỏ dấu, F1 lớp lừa đ�
 
 MT3 đã thực hiện. Khi chèn ký tự, F1 lớp lừa đảo giảm 5,9 điểm ở PhoBERT, 3,5 điểm ở ViSoBERT và 0,2 điểm ở mô hình cơ sở. Với phép thử xóa thẻ QC/TB, thẻ xuất hiện ở 78,8% tin quảng cáo, 13,5% tin bình thường và 0% tin lừa đảo. Sau khi xóa thẻ, F1 lớp lừa đảo giảm 1,7 điểm ở PhoBERT, 2,5 điểm ở ViSoBERT và 0,2 điểm ở mô hình cơ sở. F1 lớp quảng cáo của ViSoBERT giảm từ 91,9 xuống 86,8 và F1 lớp bình thường từ 84,5 xuống 77,0. Hai mô hình transformer có học một phần từ thẻ, nhưng ở lớp lừa đảo ảnh hưởng nhỏ vì tin lừa đảo không mang thẻ.
 
-Các kết quả trên có bốn hạn chế. Mẫu chỉ 600 tin từ một bộ dữ liệu. Nhãn là nhãn sơ bộ do mô hình ngôn ngữ gán rồi người xem lại, kappa dưới ngưỡng. Tin gần trùng chưa được gom nhóm, nên kết quả có thể cao hơn thực tế. Chênh lệch giữa các mô hình nhỏ so với độ lệch chuẩn nên chỉ là bằng chứng sơ bộ.
+Các kết quả trên có bốn hạn chế. Mẫu chỉ 600 tin từ một bộ dữ liệu. Nhãn là nhãn sơ bộ do mô hình ngôn ngữ gán, người xem lại 300 trong 600 tin, kappa dưới ngưỡng. Tin gần trùng chưa được gom nhóm, nên kết quả có thể cao hơn thực tế. Chênh lệch giữa các mô hình nhỏ so với độ lệch chuẩn nên chỉ là bằng chứng sơ bộ.
 
 Nhóm kiến nghị làm tiếp bốn việc. Gán nhãn toàn bộ 2.629 tin với hai người gán mù và đo lại kappa. Gom các tin gần trùng trước khi chia tập. Dùng tập kiểm tra cố định và kiểm định bootstrap cho H1, H2. Thử dò siêu tham số cho PhoBERT và ViSoBERT trên bộ dữ liệu lớn hơn trước khi kết luận về hai mô hình này so với mô hình cơ sở.
