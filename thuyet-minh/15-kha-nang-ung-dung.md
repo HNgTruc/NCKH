@@ -23,7 +23,7 @@ Checklist:
 
 ### 15.2. Hướng phát triển
 
-Các việc dưới đây nằm ngoài phạm vi 3 tháng ở mục 11, nhóm dự kiến làm sau khi kết thúc học phần:
+Các việc dưới đây nằm ngoài phạm vi 2 tháng ở mục 11, nhóm dự kiến làm sau khi kết thúc học phần:
 
 - Gán nhãn toàn bộ 2.629 tin của bộ dữ liệu công khai, với hai người gán mù và người thứ ba phân xử.
 - Thu thập thêm tin nhắn từ người tình nguyện có phiếu đồng ý, để giảm sai lệch do chỉ có một nguồn và để có tập kiểm tra theo thời gian.
@@ -32,7 +32,7 @@ Các việc dưới đây nằm ngoài phạm vi 3 tháng ở mục 11, nhóm d�
 
 ### 15.3. Kết luận và kiến nghị
 
-Các số dưới đây là kết quả sơ bộ trên 597 tin có nhãn rõ (600 tin, bỏ 3 tin `KHONG_RO`), chạy ngày 08/11/2026 với random seed 42, kiểm định chéo 5 phần. Mỗi phần kiểm tra có khoảng 120 tin, trong đó khoảng 39 tin lừa đảo. Bảng ghi F1 lớp lừa đảo theo dạng trung bình ± độ lệch chuẩn qua 5 phần.
+Phần này báo kết quả thử nghiệm sơ bộ của học phần, chạy ngày 08/11/2026. Các mục khác của thuyết minh là kế hoạch. Các số dưới đây là kết quả sơ bộ trên 597 tin có nhãn rõ (600 tin, bỏ 3 tin `KHONG_RO`), chạy ngày 08/11/2026 với random seed 42, kiểm định chéo 5 phần. Mỗi phần kiểm tra có khoảng 120 tin, trong đó khoảng 39 tin lừa đảo. Bảng ghi F1 lớp lừa đảo theo dạng trung bình ± độ lệch chuẩn qua 5 phần.
 
 | Mô hình | Tin gốc | Bỏ dấu thanh | Chèn ký tự | Xóa thẻ QC/TB |
 | --- | --- | --- | --- | --- |

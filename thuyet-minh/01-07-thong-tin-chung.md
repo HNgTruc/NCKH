@@ -24,7 +24,7 @@ Loại đề tài: [TODO: A1 / B1 / B2 / C, xem docs/ke-hoach/gia-dinh.md dòng 
 
 ## 3. Thời gian thực hiện
 
-03 tháng, từ tháng 9/2026 đến tháng 11/2026.
+02 tháng, từ tháng 10/2026 đến tháng 11/2026.
 
 ## 4. Chủ nhiệm đề tài
 
@@ -33,18 +33,18 @@ Loại đề tài: [TODO: A1 / B1 / B2 / C, xem docs/ke-hoach/gia-dinh.md dòng 
 | Họ và tên | Huỳnh Ngọc Trúc |
 | Chương trình đào tạo | Công nghệ thông tin |
 | MSSV | 3123411312 |
-| Lớp | [TODO] |
+| Lớp | DCT123C3 |
 | Khoa | Công nghệ Thông tin |
-| Điện thoại di động | [TODO] |
-| Email | [TODO] |
+| Điện thoại di động | 0868505271 |
+| Email | huynhngoctruc05@gmail.com |
 
 ## 5. Các thành viên tham gia thực hiện đề tài
 
 | STT | Họ và tên | Đơn vị (MSSV, lớp, CTĐT) | Nội dung nghiên cứu cụ thể được giao | Chữ ký |
 | --- | --- | --- | --- | --- |
-| 1 | Huỳnh Ngọc Trúc | 3123411312, [TODO: lớp], Công nghệ thông tin | Chủ nhiệm, biên tập. Nội dung 1: chốt nhãn 600 tin (người gán thứ nhất). Viết tính cấp thiết, tiến độ, sản phẩm, kinh phí | |
-| 2 | Phạm Trần Minh Khang | 3123411143, [TODO: lớp], Công nghệ thông tin | Tổng quan tài liệu, ma trận tổng quan, tài liệu tham khảo. Nội dung 1: gán độc lập 100 tin để đo kappa (người gán thứ hai, không xem nhãn gợi ý) | |
-| 3 | Ngô Nguyễn Thành Nhân | 3123411205, [TODO: lớp], Công nghệ thông tin | Mục tiêu, phương pháp. Nội dung 1: soạn hướng dẫn gán nhãn, script gán nhãn sơ bộ. Nội dung 2 và 3: huấn luyện, đánh giá ba mô hình, đánh giá trên tin biến dạng | |
+| 1 | Huỳnh Ngọc Trúc | 3123411312, DCT123C3, Công nghệ thông tin | Chủ nhiệm, biên tập. Nội dung 1: chốt nhãn 600 tin (người gán thứ nhất). Viết tính cấp thiết, tiến độ, sản phẩm, kinh phí | |
+| 2 | Phạm Trần Minh Khang | 3123411143, DCT123C3, Công nghệ thông tin | Tổng quan tài liệu, ma trận tổng quan, tài liệu tham khảo. Nội dung 1: gán độc lập 100 tin để đo kappa (người gán thứ hai, không xem nhãn gợi ý) | |
+| 3 | Ngô Nguyễn Thành Nhân | 3123411205, DCT123C3, Công nghệ thông tin | Mục tiêu, phương pháp. Nội dung 1: soạn hướng dẫn gán nhãn, script gán nhãn sơ bộ. Nội dung 2 và 3: huấn luyện, đánh giá ba mô hình, đánh giá trên tin biến dạng | |
 
 ## 6. Mô tả năng lực nghiên cứu của chủ nhiệm và các thành viên
 

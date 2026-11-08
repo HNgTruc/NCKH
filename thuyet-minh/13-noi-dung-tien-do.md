@@ -2,7 +2,7 @@
 Mẫu 13.1: nêu rõ từng nội dung gắn với các mục tiêu cụ thể.
 Mẫu 13.2: bảng STT, công việc chủ yếu, thời gian (bắt đầu-kết thúc), người thực hiện.
 Barem BT2: chia đề tài thành phần nhỏ tương ứng mục tiêu cụ thể; bảng tiến độ có ngày bắt đầu, ngày kết thúc, người phụ trách. CLO4: phân bổ thời gian hợp lý.
-Bảng dưới là KẾ HOẠCH THỰC HIỆN ĐỀ TÀI (6 tháng), khác lịch làm bài môn học ở docs/ke-hoach/lich-trinh.md.
+Bảng dưới là KẾ HOẠCH THỰC HIỆN ĐỀ TÀI (2 tháng, 10/2026 đến 11/2026), khác lịch làm bài môn học ở docs/ke-hoach/lich-trinh.md.
 Cột "Mục tiêu" thêm vào để người chấm thấy liên kết với mục 10. Nếu muốn giữ đúng 4 cột của mẫu, đưa MT vào cuối ô "Công việc".
 
 Checklist:
@@ -24,7 +24,7 @@ Checklist:
 
 | STT | Công việc chủ yếu | Thời gian (bắt đầu - kết thúc) | Người thực hiện | Nội dung |
 | --- | --- | --- | --- | --- |
-| 1 | Xác định vấn đề nghiên cứu, đọc tài liệu sơ bộ, đề xuất câu hỏi nghiên cứu | 09/2026 - 10/2026 | Cả nhóm | Chuẩn bị |
+| 1 | Xác định vấn đề nghiên cứu, đọc tài liệu sơ bộ, đề xuất câu hỏi nghiên cứu | 10/2026 | Cả nhóm | Chuẩn bị |
 | 2 | Tổng quan tài liệu, lập ma trận tổng quan, chốt tên đề tài | 01/11/2026 - 07/11/2026 | Khang, Huỳnh Ngọc Trúc | Chuẩn bị |
 | 3 | Chọn bộ dữ liệu, soạn hướng dẫn gán nhãn, viết script gán nhãn sơ bộ | 04/11/2026 - 07/11/2026 | Nhân | 1 |
 | 4 | Gán nhãn: chốt nhãn 600 tin; gán độc lập 100 tin không xem nhãn gợi ý; tính kappa | 07/11/2026 - 12/11/2026 | Huỳnh Ngọc Trúc (600 tin), Khang (100 tin) | 1 |
