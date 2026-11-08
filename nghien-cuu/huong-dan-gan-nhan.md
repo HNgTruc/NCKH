@@ -23,8 +23,8 @@ Nếu cuối cùng chỉ cần phân loại hai lớp, gộp `QUANG_CAO` và `BI
 5. Tin hẹn hò, "sugar baby", hứa trả "trợ cấp" rồi mời sang Telegram hoặc Zalo: `LUA_DAO`, vì hứa trả tiền phi thực tế và dẫn sang kênh chat riêng. Trúc chốt ngày 06/11/2026.
 6. Tin của nhà mạng hoặc doanh nghiệp gán theo nội dung, không theo thẻ (QC) hay (TB) ở đầu tin. Tin mời mua gói, khuyến mãi là `QUANG_CAO`, kể cả khi gắn thẻ (TB). Tin báo về gói hay tài khoản đang dùng (đăng ký thành công, hết data, gia hạn lỗi, OTP, biến động số dư) là `BINH_THUONG`. Trúc chốt ngày 06/11/2026.
 
-7. Đề xuất, chờ Trúc và Khang chốt (sau vòng kappa đầu, κ = 0,569): tin chứa mã OTP, mã xác minh hoặc báo giao dịch do chính dịch vụ gửi, không kèm link hay lời mời gọi lại số lạ, là `BINH_THUONG`, kể cả khi có câu "không chia sẻ mã cho ai". Bảy tin OTP trong mẫu kappa bị gán khác nhau vì chưa có quy tắc này.
-8. Đề xuất, chờ chốt: tin của nhà mạng hoặc doanh nghiệp mời mua, mời vay, mời nhận quà hoặc trúng thưởng, dùng đầu số hoặc tên miền chính thức của nhà cung cấp, là `QUANG_CAO`. Tin giả danh nhà mạng hoặc ngân hàng, dùng tên miền lạ hoặc bắt gọi số lạ để "cập nhật thông tin" hoặc "tránh bị khóa", là `LUA_DAO`.
+7. Trúc và Khang chốt ngày 08/11/2026 (sau vòng kappa đầu, κ = 0,569): tin chứa mã OTP, mã xác minh hoặc báo giao dịch do chính dịch vụ gửi, không kèm link hay lời mời gọi lại số lạ, là `BINH_THUONG`, kể cả khi có câu "không chia sẻ mã cho ai". Bảy tin OTP trong mẫu kappa bị gán khác nhau vì chưa có quy tắc này.
+8. Trúc và Khang chốt ngày 08/11/2026: tin của nhà mạng hoặc doanh nghiệp mời mua, mời vay, mời nhận quà hoặc trúng thưởng, dùng đầu số hoặc tên miền chính thức của nhà cung cấp, là `QUANG_CAO`. Tin giả danh nhà mạng hoặc ngân hàng, dùng tên miền lạ hoặc bắt gọi số lạ để "cập nhật thông tin" hoặc "tránh bị khóa", là `LUA_DAO`.
 
 ## Quy trình
 
