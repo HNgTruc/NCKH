@@ -1,0 +1,1223 @@
+{
+  "ngay_chay": "2026-11-08T16:06:11",
+  "cau_hinh": {
+    "SEED": 42,
+    "SO_FOLD": 5,
+    "EPOCHS": 4,
+    "BATCH": 16,
+    "LR": 2e-05,
+    "MAX_LEN": 128,
+    "MO_HINH": {
+      "PhoBERT-base": [
+        "vinai/phobert-base",
+        true
+      ],
+      "ViSoBERT": [
+        "uitnlp/visobert",
+        false
+      ]
+    },
+    "CHI_DOT_1": true,
+    "cong_cu_tach_tu": "RDRSegmenter (VnCoreNLP)",
+    "thiet_bi": "cuda"
+  },
+  "phien_ban": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3"
+  },
+  "du_lieu": {
+    "so_tin": 597,
+    "bo_qua": 3,
+    "thong_ke": [
+      {
+        "nhan_chot": "LUA_DAO",
+        "so_tin": 194,
+        "ti_le_khong_dau": 0.33
+      },
+      {
+        "nhan_chot": "QUANG_CAO",
+        "so_tin": 240,
+        "ti_le_khong_dau": 0.533
+      },
+      {
+        "nhan_chot": "BINH_THUONG",
+        "so_tin": 163,
+        "ti_le_khong_dau": 0.656
+      }
+    ],
+    "nhan_goc_x_nhan_chot": {
+      "LUA_DAO": {
+        "0": 3,
+        "1": 191
+      },
+      "QUANG_CAO": {
+        "0": 232,
+        "1": 8
+      },
+      "BINH_THUONG": {
+        "0": 163,
+        "1": 0
+      }
+    },
+    "ti_le_goi_y_dung": 0.8727,
+    "CH2_ti_le_chuyen_nhan_uoc_luong_%": {
+      "LUA_DAO": {
+        "0": 0.8,
+        "1": 95.9
+      },
+      "QUANG_CAO": {
+        "0": 53.3,
+        "1": 4.1
+      },
+      "BINH_THUONG": {
+        "0": 45.9,
+        "1": 0.0
+      }
+    },
+    "ti_le_co_the_QC_TB_theo_nhan": {
+      "LUA_DAO": 0.0,
+      "QUANG_CAO": 0.7875,
+      "BINH_THUONG": 0.135
+    }
+  },
+  "so_sanh_theo_fold": {
+    "H1: F1 PhoBERT - F1 LR": {
+      "0": -1.14,
+      "1": -4.72,
+      "2": 0.0,
+      "3": -3.52,
+      "4": 3.96
+    },
+    "H2: giảm PhoBERT - giảm ViSoBERT": {
+      "0": 3.7,
+      "1": -3.32,
+      "2": 4.02,
+      "3": 6.31,
+      "4": 1.44
+    }
+  },
+  "ket_qua_tung_fold": [
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 0,
+      "kieu": "goc",
+      "macro_f1": 0.9214538672112104,
+      "P_LUA_DAO": 0.9,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9113924050632911,
+      "P_QUANG_CAO": 0.9782608695652174,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9574468085106383,
+      "P_BINH_THUONG": 0.8823529411764706,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.8955223880597015
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 0,
+      "kieu": "bo_dau",
+      "macro_f1": 0.9303541560710848,
+      "P_LUA_DAO": 0.9473684210526315,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.935064935064935,
+      "P_QUANG_CAO": 0.9782608695652174,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9574468085106383,
+      "P_BINH_THUONG": 0.8611111111111112,
+      "R_BINH_THUONG": 0.9393939393939394,
+      "F1_BINH_THUONG": 0.8985507246376812
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 0,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.9200541563356387,
+      "P_LUA_DAO": 0.925,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.9367088607594937,
+      "P_QUANG_CAO": 0.9387755102040817,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9484536082474226,
+      "P_BINH_THUONG": 0.9032258064516129,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.875
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 0,
+      "kieu": "xoa_the",
+      "macro_f1": 0.9214538672112104,
+      "P_LUA_DAO": 0.9,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9113924050632911,
+      "P_QUANG_CAO": 0.9782608695652174,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9574468085106383,
+      "P_BINH_THUONG": 0.8823529411764706,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.8955223880597015
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 1,
+      "kieu": "goc",
+      "macro_f1": 0.9173658444228064,
+      "P_LUA_DAO": 0.9,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9113924050632911,
+      "P_QUANG_CAO": 0.9791666666666666,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.9791666666666666,
+      "P_BINH_THUONG": 0.875,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.8615384615384616
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 1,
+      "kieu": "bo_dau",
+      "macro_f1": 0.9106542802916792,
+      "P_LUA_DAO": 0.9166666666666666,
+      "R_LUA_DAO": 0.8461538461538461,
+      "F1_LUA_DAO": 0.88,
+      "P_QUANG_CAO": 1.0,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9787234042553191,
+      "P_BINH_THUONG": 0.8157894736842105,
+      "R_BINH_THUONG": 0.9393939393939394,
+      "F1_BINH_THUONG": 0.8732394366197183
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 1,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.9014550264550265,
+      "P_LUA_DAO": 0.8571428571428571,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.8888888888888888,
+      "P_QUANG_CAO": 0.9583333333333334,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9583333333333334,
+      "P_BINH_THUONG": 0.9,
+      "R_BINH_THUONG": 0.8181818181818182,
+      "F1_BINH_THUONG": 0.8571428571428571
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 1,
+      "kieu": "xoa_the",
+      "macro_f1": 0.9173658444228064,
+      "P_LUA_DAO": 0.9,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9113924050632911,
+      "P_QUANG_CAO": 0.9791666666666666,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.9791666666666666,
+      "P_BINH_THUONG": 0.875,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.8615384615384616
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 2,
+      "kieu": "goc",
+      "macro_f1": 0.9366394880071546,
+      "P_LUA_DAO": 0.8837209302325582,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9382716049382716,
+      "P_QUANG_CAO": 0.9787234042553191,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.968421052631579,
+      "P_BINH_THUONG": 0.9655172413793104,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.9032258064516129
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 2,
+      "kieu": "bo_dau",
+      "macro_f1": 0.9041340322746428,
+      "P_LUA_DAO": 0.918918918918919,
+      "R_LUA_DAO": 0.8947368421052632,
+      "F1_LUA_DAO": 0.9066666666666666,
+      "P_QUANG_CAO": 0.9565217391304348,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9361702127659575,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.8695652173913043
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 2,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.9291672944183115,
+      "P_LUA_DAO": 0.8636363636363636,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.926829268292683,
+      "P_QUANG_CAO": 0.9782608695652174,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9574468085106383,
+      "P_BINH_THUONG": 0.9655172413793104,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.9032258064516129
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 2,
+      "kieu": "xoa_the",
+      "macro_f1": 0.9366394880071546,
+      "P_LUA_DAO": 0.8837209302325582,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9382716049382716,
+      "P_QUANG_CAO": 0.9787234042553191,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.968421052631579,
+      "P_BINH_THUONG": 0.9655172413793104,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.9032258064516129
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 3,
+      "kieu": "goc",
+      "macro_f1": 0.9344604162196953,
+      "P_LUA_DAO": 0.95,
+      "R_LUA_DAO": 0.9743589743589743,
+      "F1_LUA_DAO": 0.9620253164556962,
+      "P_QUANG_CAO": 0.9230769230769231,
+      "R_QUANG_CAO": 1.0,
+      "F1_QUANG_CAO": 0.96,
+      "P_BINH_THUONG": 0.9629629629629629,
+      "R_BINH_THUONG": 0.8125,
+      "F1_BINH_THUONG": 0.8813559322033898
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 3,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8722915536263338,
+      "P_LUA_DAO": 0.8918918918918919,
+      "R_LUA_DAO": 0.8461538461538461,
+      "F1_LUA_DAO": 0.868421052631579,
+      "P_QUANG_CAO": 0.9387755102040817,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9484536082474226,
+      "P_BINH_THUONG": 0.7878787878787878,
+      "R_BINH_THUONG": 0.8125,
+      "F1_BINH_THUONG": 0.8
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 3,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.9161207897793263,
+      "P_LUA_DAO": 0.9069767441860465,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9512195121951219,
+      "P_QUANG_CAO": 0.9038461538461539,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.94,
+      "P_BINH_THUONG": 1.0,
+      "R_BINH_THUONG": 0.75,
+      "F1_BINH_THUONG": 0.8571428571428571
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 3,
+      "kieu": "xoa_the",
+      "macro_f1": 0.924022988505747,
+      "P_LUA_DAO": 0.926829268292683,
+      "R_LUA_DAO": 0.9743589743589743,
+      "F1_LUA_DAO": 0.95,
+      "P_QUANG_CAO": 0.9230769230769231,
+      "R_QUANG_CAO": 1.0,
+      "F1_QUANG_CAO": 0.96,
+      "P_BINH_THUONG": 0.9615384615384616,
+      "R_BINH_THUONG": 0.78125,
+      "F1_BINH_THUONG": 0.8620689655172413
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 4,
+      "kieu": "goc",
+      "macro_f1": 0.8791433860558285,
+      "P_LUA_DAO": 0.8717948717948718,
+      "R_LUA_DAO": 0.8717948717948718,
+      "F1_LUA_DAO": 0.8717948717948718,
+      "P_QUANG_CAO": 0.94,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.9591836734693877,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.78125,
+      "F1_BINH_THUONG": 0.8064516129032258
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 4,
+      "kieu": "bo_dau",
+      "macro_f1": 0.856198803959998,
+      "P_LUA_DAO": 0.9090909090909091,
+      "R_LUA_DAO": 0.7692307692307693,
+      "F1_LUA_DAO": 0.8333333333333334,
+      "P_QUANG_CAO": 0.9019607843137255,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9292929292929293,
+      "P_BINH_THUONG": 0.7714285714285715,
+      "R_BINH_THUONG": 0.84375,
+      "F1_BINH_THUONG": 0.8059701492537313
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 4,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.8700007096728407,
+      "P_LUA_DAO": 0.8947368421052632,
+      "R_LUA_DAO": 0.8717948717948718,
+      "F1_LUA_DAO": 0.8831168831168831,
+      "P_QUANG_CAO": 0.9038461538461539,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.94,
+      "P_BINH_THUONG": 0.8275862068965517,
+      "R_BINH_THUONG": 0.75,
+      "F1_BINH_THUONG": 0.7868852459016393
+    },
+    {
+      "mo_hinh": "TF-IDF + LR",
+      "fold": 4,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8791433860558285,
+      "P_LUA_DAO": 0.8717948717948718,
+      "R_LUA_DAO": 0.8717948717948718,
+      "F1_LUA_DAO": 0.8717948717948718,
+      "P_QUANG_CAO": 0.94,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.9591836734693877,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.78125,
+      "F1_BINH_THUONG": 0.8064516129032258
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 0,
+      "kieu": "goc",
+      "macro_f1": 0.8377777777777777,
+      "P_LUA_DAO": 0.8780487804878049,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9,
+      "P_QUANG_CAO": 0.8461538461538461,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.88,
+      "P_BINH_THUONG": 0.8148148148148148,
+      "R_BINH_THUONG": 0.6666666666666666,
+      "F1_BINH_THUONG": 0.7333333333333333
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 0,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8631044684417554,
+      "P_LUA_DAO": 0.96875,
+      "R_LUA_DAO": 0.7948717948717948,
+      "F1_LUA_DAO": 0.8732394366197183,
+      "P_QUANG_CAO": 0.9148936170212766,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9052631578947369,
+      "P_BINH_THUONG": 0.7317073170731707,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.8108108108108109
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 0,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.7606490872210953,
+      "P_LUA_DAO": 0.7708333333333334,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.8505747126436781,
+      "P_QUANG_CAO": 0.7962962962962963,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.8431372549019608,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.45454545454545453,
+      "F1_BINH_THUONG": 0.5882352941176471
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 0,
+      "kieu": "xoa_the",
+      "macro_f1": 0.7993999768172863,
+      "P_LUA_DAO": 0.8181818181818182,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.8674698795180723,
+      "P_QUANG_CAO": 0.8297872340425532,
+      "R_QUANG_CAO": 0.8125,
+      "F1_QUANG_CAO": 0.8210526315789474,
+      "P_BINH_THUONG": 0.7586206896551724,
+      "R_BINH_THUONG": 0.6666666666666666,
+      "F1_BINH_THUONG": 0.7096774193548387
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 1,
+      "kieu": "goc",
+      "macro_f1": 0.8742150574052734,
+      "P_LUA_DAO": 0.8333333333333334,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.8641975308641975,
+      "P_QUANG_CAO": 0.92,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9387755102040817,
+      "P_BINH_THUONG": 0.8928571428571429,
+      "R_BINH_THUONG": 0.7575757575757576,
+      "F1_BINH_THUONG": 0.819672131147541
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 1,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8192829144321682,
+      "P_LUA_DAO": 0.8928571428571429,
+      "R_LUA_DAO": 0.6410256410256411,
+      "F1_LUA_DAO": 0.746268656716418,
+      "P_QUANG_CAO": 0.9583333333333334,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9583333333333334,
+      "P_BINH_THUONG": 0.6590909090909091,
+      "R_BINH_THUONG": 0.8787878787878788,
+      "F1_BINH_THUONG": 0.7532467532467533
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 1,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.7931377679276839,
+      "P_LUA_DAO": 0.7115384615384616,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.8131868131868132,
+      "P_QUANG_CAO": 0.92,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9387755102040817,
+      "P_BINH_THUONG": 0.8888888888888888,
+      "R_BINH_THUONG": 0.48484848484848486,
+      "F1_BINH_THUONG": 0.6274509803921569
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 1,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8459584040629874,
+      "P_LUA_DAO": 0.7954545454545454,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.8433734939759037,
+      "P_QUANG_CAO": 0.9183673469387755,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9278350515463918,
+      "P_BINH_THUONG": 0.8518518518518519,
+      "R_BINH_THUONG": 0.696969696969697,
+      "F1_BINH_THUONG": 0.7666666666666667
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 2,
+      "kieu": "goc",
+      "macro_f1": 0.9109244410504433,
+      "P_LUA_DAO": 0.8837209302325582,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9382716049382716,
+      "P_QUANG_CAO": 0.9183673469387755,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9278350515463918,
+      "P_BINH_THUONG": 0.9629629629629629,
+      "R_BINH_THUONG": 0.7878787878787878,
+      "F1_BINH_THUONG": 0.8666666666666667
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 2,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8432149644643875,
+      "P_LUA_DAO": 1.0,
+      "R_LUA_DAO": 0.7631578947368421,
+      "F1_LUA_DAO": 0.8656716417910447,
+      "P_QUANG_CAO": 0.8979591836734694,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9072164948453608,
+      "P_BINH_THUONG": 0.6829268292682927,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.7567567567567568
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 2,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.7751254036968321,
+      "P_LUA_DAO": 0.7307692307692307,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.8444444444444444,
+      "P_QUANG_CAO": 0.8431372549019608,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.8686868686868687,
+      "P_BINH_THUONG": 0.9375,
+      "R_BINH_THUONG": 0.45454545454545453,
+      "F1_BINH_THUONG": 0.6122448979591837
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 2,
+      "kieu": "xoa_the",
+      "macro_f1": 0.9018680247199367,
+      "P_LUA_DAO": 0.8636363636363636,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.926829268292683,
+      "P_QUANG_CAO": 0.9361702127659575,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9263157894736842,
+      "P_BINH_THUONG": 0.9285714285714286,
+      "R_BINH_THUONG": 0.7878787878787878,
+      "F1_BINH_THUONG": 0.8524590163934426
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 3,
+      "kieu": "goc",
+      "macro_f1": 0.8960859465737515,
+      "P_LUA_DAO": 0.8837209302325582,
+      "R_LUA_DAO": 0.9743589743589743,
+      "F1_LUA_DAO": 0.926829268292683,
+      "P_QUANG_CAO": 0.9038461538461539,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.94,
+      "P_BINH_THUONG": 0.9583333333333334,
+      "R_BINH_THUONG": 0.71875,
+      "F1_BINH_THUONG": 0.8214285714285714
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 3,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8114271552428344,
+      "P_LUA_DAO": 0.9310344827586207,
+      "R_LUA_DAO": 0.6923076923076923,
+      "F1_LUA_DAO": 0.7941176470588235,
+      "P_QUANG_CAO": 0.9183673469387755,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9278350515463918,
+      "P_BINH_THUONG": 0.6341463414634146,
+      "R_BINH_THUONG": 0.8125,
+      "F1_BINH_THUONG": 0.7123287671232876
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 3,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.7788291517323774,
+      "P_LUA_DAO": 0.7222222222222222,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.8387096774193549,
+      "P_QUANG_CAO": 0.8846153846153846,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.92,
+      "P_BINH_THUONG": 1.0,
+      "R_BINH_THUONG": 0.40625,
+      "F1_BINH_THUONG": 0.5777777777777777
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 3,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8852208835341365,
+      "P_LUA_DAO": 0.8636363636363636,
+      "R_LUA_DAO": 0.9743589743589743,
+      "F1_LUA_DAO": 0.9156626506024096,
+      "P_QUANG_CAO": 0.9038461538461539,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.94,
+      "P_BINH_THUONG": 0.9565217391304348,
+      "R_BINH_THUONG": 0.6875,
+      "F1_BINH_THUONG": 0.8
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 4,
+      "kieu": "goc",
+      "macro_f1": 0.8603013946091247,
+      "P_LUA_DAO": 0.9,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9113924050632911,
+      "P_QUANG_CAO": 0.8679245283018868,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9108910891089109,
+      "P_BINH_THUONG": 0.8461538461538461,
+      "R_BINH_THUONG": 0.6875,
+      "F1_BINH_THUONG": 0.7586206896551724
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 4,
+      "kieu": "bo_dau",
+      "macro_f1": 0.804370830457787,
+      "P_LUA_DAO": 0.9354838709677419,
+      "R_LUA_DAO": 0.7435897435897436,
+      "F1_LUA_DAO": 0.8285714285714286,
+      "P_QUANG_CAO": 0.8627450980392157,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.8888888888888888,
+      "P_BINH_THUONG": 0.6486486486486487,
+      "R_BINH_THUONG": 0.75,
+      "F1_BINH_THUONG": 0.6956521739130435
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 4,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.8121647548556382,
+      "P_LUA_DAO": 0.8974358974358975,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.8974358974358975,
+      "P_QUANG_CAO": 0.7796610169491526,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.8598130841121495,
+      "P_BINH_THUONG": 0.8571428571428571,
+      "R_BINH_THUONG": 0.5625,
+      "F1_BINH_THUONG": 0.6792452830188679
+    },
+    {
+      "mo_hinh": "PhoBERT-base",
+      "fold": 4,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8311055416318575,
+      "P_LUA_DAO": 0.8780487804878049,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9,
+      "P_QUANG_CAO": 0.8723404255319149,
+      "R_QUANG_CAO": 0.8541666666666666,
+      "F1_QUANG_CAO": 0.8631578947368421,
+      "P_BINH_THUONG": 0.7419354838709677,
+      "R_BINH_THUONG": 0.71875,
+      "F1_BINH_THUONG": 0.7301587301587301
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 0,
+      "kieu": "goc",
+      "macro_f1": 0.8631783318892206,
+      "P_LUA_DAO": 0.9230769230769231,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9230769230769231,
+      "P_QUANG_CAO": 0.8913043478260869,
+      "R_QUANG_CAO": 0.8541666666666666,
+      "F1_QUANG_CAO": 0.8723404255319149,
+      "P_BINH_THUONG": 0.7714285714285715,
+      "R_BINH_THUONG": 0.8181818181818182,
+      "F1_BINH_THUONG": 0.7941176470588235
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 0,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8644767872784853,
+      "P_LUA_DAO": 0.9722222222222222,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.9333333333333333,
+      "P_QUANG_CAO": 0.8571428571428571,
+      "R_QUANG_CAO": 0.875,
+      "F1_QUANG_CAO": 0.865979381443299,
+      "P_BINH_THUONG": 0.7714285714285715,
+      "R_BINH_THUONG": 0.8181818181818182,
+      "F1_BINH_THUONG": 0.7941176470588235
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 0,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.834972061035891,
+      "P_LUA_DAO": 0.8536585365853658,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.875,
+      "P_QUANG_CAO": 0.8913043478260869,
+      "R_QUANG_CAO": 0.8541666666666666,
+      "F1_QUANG_CAO": 0.8723404255319149,
+      "P_BINH_THUONG": 0.7575757575757576,
+      "R_BINH_THUONG": 0.7575757575757576,
+      "F1_BINH_THUONG": 0.7575757575757576
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 0,
+      "kieu": "xoa_the",
+      "macro_f1": 0.856317391528659,
+      "P_LUA_DAO": 0.9230769230769231,
+      "R_LUA_DAO": 0.9230769230769231,
+      "F1_LUA_DAO": 0.9230769230769231,
+      "P_QUANG_CAO": 0.9069767441860465,
+      "R_QUANG_CAO": 0.8125,
+      "F1_QUANG_CAO": 0.8571428571428571,
+      "P_BINH_THUONG": 0.7368421052631579,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.7887323943661971
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 1,
+      "kieu": "goc",
+      "macro_f1": 0.8972440992076335,
+      "P_LUA_DAO": 0.8974358974358975,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.8974358974358975,
+      "P_QUANG_CAO": 0.9555555555555556,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9247311827956989,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.8695652173913043
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 1,
+      "kieu": "bo_dau",
+      "macro_f1": 0.806999946504039,
+      "P_LUA_DAO": 0.8928571428571429,
+      "R_LUA_DAO": 0.6410256410256411,
+      "F1_LUA_DAO": 0.746268656716418,
+      "P_QUANG_CAO": 0.9555555555555556,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9247311827956989,
+      "P_BINH_THUONG": 0.6382978723404256,
+      "R_BINH_THUONG": 0.9090909090909091,
+      "F1_BINH_THUONG": 0.75
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 1,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.8959624450981183,
+      "P_LUA_DAO": 0.8409090909090909,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.891566265060241,
+      "P_QUANG_CAO": 0.9772727272727273,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9347826086956522,
+      "P_BINH_THUONG": 0.875,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.8615384615384616
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 1,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8467122962494065,
+      "P_LUA_DAO": 0.8536585365853658,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.875,
+      "P_QUANG_CAO": 0.9512195121951219,
+      "R_QUANG_CAO": 0.8125,
+      "F1_QUANG_CAO": 0.8764044943820225,
+      "P_BINH_THUONG": 0.7368421052631579,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.7887323943661971
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 2,
+      "kieu": "goc",
+      "macro_f1": 0.930167740509782,
+      "P_LUA_DAO": 0.926829268292683,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9620253164556962,
+      "P_QUANG_CAO": 0.9565217391304348,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9361702127659575,
+      "P_BINH_THUONG": 0.90625,
+      "R_BINH_THUONG": 0.8787878787878788,
+      "F1_BINH_THUONG": 0.8923076923076924
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 2,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8801320594130083,
+      "P_LUA_DAO": 1.0,
+      "R_LUA_DAO": 0.868421052631579,
+      "F1_LUA_DAO": 0.9295774647887324,
+      "P_QUANG_CAO": 0.9148936170212766,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9052631578947369,
+      "P_BINH_THUONG": 0.7435897435897436,
+      "R_BINH_THUONG": 0.8787878787878788,
+      "F1_BINH_THUONG": 0.8055555555555556
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 2,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.9217873019805386,
+      "P_LUA_DAO": 0.8837209302325582,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9382716049382716,
+      "P_QUANG_CAO": 0.9772727272727273,
+      "R_QUANG_CAO": 0.8958333333333334,
+      "F1_QUANG_CAO": 0.9347826086956522,
+      "P_BINH_THUONG": 0.90625,
+      "R_BINH_THUONG": 0.8787878787878788,
+      "F1_BINH_THUONG": 0.8923076923076924
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 2,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8290780740579938,
+      "P_LUA_DAO": 0.8444444444444444,
+      "R_LUA_DAO": 1.0,
+      "F1_LUA_DAO": 0.9156626506024096,
+      "P_QUANG_CAO": 1.0,
+      "R_QUANG_CAO": 0.6875,
+      "F1_QUANG_CAO": 0.8148148148148148,
+      "P_BINH_THUONG": 0.6829268292682927,
+      "R_BINH_THUONG": 0.8484848484848485,
+      "F1_BINH_THUONG": 0.7567567567567568
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 3,
+      "kieu": "goc",
+      "macro_f1": 0.930735788156248,
+      "P_LUA_DAO": 1.0,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.9736842105263158,
+      "P_QUANG_CAO": 0.9565217391304348,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9361702127659575,
+      "P_BINH_THUONG": 0.8333333333333334,
+      "R_BINH_THUONG": 0.9375,
+      "F1_BINH_THUONG": 0.8823529411764706
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 3,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8684812436484267,
+      "P_LUA_DAO": 0.9705882352941176,
+      "R_LUA_DAO": 0.8461538461538461,
+      "F1_LUA_DAO": 0.9041095890410958,
+      "P_QUANG_CAO": 0.8979591836734694,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9072164948453608,
+      "P_BINH_THUONG": 0.75,
+      "R_BINH_THUONG": 0.84375,
+      "F1_BINH_THUONG": 0.7941176470588235
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 3,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.8299744205875513,
+      "P_LUA_DAO": 0.8222222222222222,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.8809523809523809,
+      "P_QUANG_CAO": 0.8979591836734694,
+      "R_QUANG_CAO": 0.9166666666666666,
+      "F1_QUANG_CAO": 0.9072164948453608,
+      "P_BINH_THUONG": 0.8,
+      "R_BINH_THUONG": 0.625,
+      "F1_BINH_THUONG": 0.7017543859649122
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 3,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8785284217512919,
+      "P_LUA_DAO": 0.925,
+      "R_LUA_DAO": 0.9487179487179487,
+      "F1_LUA_DAO": 0.9367088607594937,
+      "P_QUANG_CAO": 0.975609756097561,
+      "R_QUANG_CAO": 0.8333333333333334,
+      "F1_QUANG_CAO": 0.898876404494382,
+      "P_BINH_THUONG": 0.7368421052631579,
+      "R_BINH_THUONG": 0.875,
+      "F1_BINH_THUONG": 0.8
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 4,
+      "kieu": "goc",
+      "macro_f1": 0.86523794647506,
+      "P_LUA_DAO": 0.9166666666666666,
+      "R_LUA_DAO": 0.8461538461538461,
+      "F1_LUA_DAO": 0.88,
+      "P_QUANG_CAO": 0.9183673469387755,
+      "R_QUANG_CAO": 0.9375,
+      "F1_QUANG_CAO": 0.9278350515463918,
+      "P_BINH_THUONG": 0.7647058823529411,
+      "R_BINH_THUONG": 0.8125,
+      "F1_BINH_THUONG": 0.7878787878787878
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 4,
+      "kieu": "bo_dau",
+      "macro_f1": 0.8350724637681161,
+      "P_LUA_DAO": 0.9333333333333333,
+      "R_LUA_DAO": 0.717948717948718,
+      "F1_LUA_DAO": 0.8115942028985508,
+      "P_QUANG_CAO": 0.9038461538461539,
+      "R_QUANG_CAO": 0.9791666666666666,
+      "F1_QUANG_CAO": 0.94,
+      "P_BINH_THUONG": 0.7027027027027027,
+      "R_BINH_THUONG": 0.8125,
+      "F1_BINH_THUONG": 0.7536231884057971
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 4,
+      "kieu": "chen_ky_tu",
+      "macro_f1": 0.8601473922902495,
+      "P_LUA_DAO": 0.8536585365853658,
+      "R_LUA_DAO": 0.8974358974358975,
+      "F1_LUA_DAO": 0.875,
+      "P_QUANG_CAO": 0.92,
+      "R_QUANG_CAO": 0.9583333333333334,
+      "F1_QUANG_CAO": 0.9387755102040817,
+      "P_BINH_THUONG": 0.8214285714285714,
+      "R_BINH_THUONG": 0.71875,
+      "F1_BINH_THUONG": 0.7666666666666667
+    },
+    {
+      "mo_hinh": "ViSoBERT",
+      "fold": 4,
+      "kieu": "xoa_the",
+      "macro_f1": 0.8223925962890712,
+      "P_LUA_DAO": 0.868421052631579,
+      "R_LUA_DAO": 0.8461538461538461,
+      "F1_LUA_DAO": 0.8571428571428571,
+      "P_QUANG_CAO": 0.9130434782608695,
+      "R_QUANG_CAO": 0.875,
+      "F1_QUANG_CAO": 0.8936170212765957,
+      "P_BINH_THUONG": 0.6857142857142857,
+      "R_BINH_THUONG": 0.75,
+      "F1_BINH_THUONG": 0.7164179104477612
+    }
+  ],
+  "ma_tran_nham_lan": {
+    "TF-IDF + LR|goc": [
+      [
+        182,
+        1,
+        11
+      ],
+      [
+        3,
+        233,
+        4
+      ],
+      [
+        17,
+        9,
+        137
+      ]
+    ],
+    "TF-IDF + LR|bo_dau": [
+      [
+        166,
+        4,
+        24
+      ],
+      [
+        4,
+        227,
+        9
+      ],
+      [
+        11,
+        7,
+        145
+      ]
+    ],
+    "TF-IDF + LR|chen_ky_tu": [
+      [
+        184,
+        2,
+        8
+      ],
+      [
+        5,
+        231,
+        4
+      ],
+      [
+        18,
+        14,
+        131
+      ]
+    ],
+    "TF-IDF + LR|xoa_the": [
+      [
+        182,
+        1,
+        11
+      ],
+      [
+        3,
+        233,
+        4
+      ],
+      [
+        18,
+        9,
+        136
+      ]
+    ],
+    "PhoBERT-base|goc": [
+      [
+        183,
+        4,
+        7
+      ],
+      [
+        5,
+        228,
+        7
+      ],
+      [
+        21,
+        24,
+        118
+      ]
+    ],
+    "PhoBERT-base|bo_dau": [
+      [
+        141,
+        3,
+        50
+      ],
+      [
+        1,
+        222,
+        17
+      ],
+      [
+        7,
+        19,
+        137
+      ]
+    ],
+    "PhoBERT-base|chen_ky_tu": [
+      [
+        186,
+        5,
+        3
+      ],
+      [
+        10,
+        224,
+        6
+      ],
+      [
+        49,
+        37,
+        77
+      ]
+    ],
+    "PhoBERT-base|xoa_the": [
+      [
+        183,
+        4,
+        7
+      ],
+      [
+        9,
+        216,
+        15
+      ],
+      [
+        25,
+        22,
+        116
+      ]
+    ],
+    "ViSoBERT|goc": [
+      [
+        179,
+        3,
+        12
+      ],
+      [
+        4,
+        217,
+        19
+      ],
+      [
+        9,
+        12,
+        142
+      ]
+    ],
+    "ViSoBERT|bo_dau": [
+      [
+        154,
+        3,
+        37
+      ],
+      [
+        3,
+        219,
+        18
+      ],
+      [
+        4,
+        20,
+        139
+      ]
+    ],
+    "ViSoBERT|chen_ky_tu": [
+      [
+        182,
+        2,
+        10
+      ],
+      [
+        8,
+        217,
+        15
+      ],
+      [
+        24,
+        14,
+        125
+      ]
+    ],
+    "ViSoBERT|xoa_the": [
+      [
+        179,
+        3,
+        12
+      ],
+      [
+        5,
+        193,
+        42
+      ],
+      [
+        19,
+        8,
+        136
+      ]
+    ]
+  },
+  "nham_lua_dao_quang_cao": {
+    "TF-IDF + LR": {
+      "lua_dao_thanh_quang_cao_%": 0.5,
+      "quang_cao_thanh_lua_dao_%": 1.2
+    },
+    "PhoBERT-base": {
+      "lua_dao_thanh_quang_cao_%": 2.1,
+      "quang_cao_thanh_lua_dao_%": 2.1
+    },
+    "ViSoBERT": {
+      "lua_dao_thanh_quang_cao_%": 1.5,
+      "quang_cao_thanh_lua_dao_%": 1.7
+    }
+  }
+}
