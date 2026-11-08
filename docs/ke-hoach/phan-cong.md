@@ -5,8 +5,8 @@
 | Vai trò | Người | MSSV | Mục phụ trách | Việc cụ thể |
 | --- | --- | --- | --- | --- |
 | A: Chủ nhiệm, biên tập | Huỳnh Ngọc Trúc | 3123411312 | 1 đến 7, 9, 13 đến 16, bìa | Đăng ký lịch trình bày, giữ văn phong thống nhất, ghép bản cuối, chạy `scripts/build.ps1`, xuất PDF |
-| B: Tổng quan, tài liệu | Khang [TODO: họ tên đầy đủ] | [TODO] | 8, 99 | Tìm và đọc bài, quản lý Zotero, phiếu đọc, ma trận tổng quan, rà trích dẫn IEEE |
-| C: Phương pháp, dữ liệu | Nhân [TODO: họ tên đầy đủ] | [TODO] | 10, 11, 12 | Mục tiêu, câu hỏi nghiên cứu, thiết kế thu thập và gán nhãn, chỉ số đánh giá, đạo đức, bias |
+| B: Tổng quan, tài liệu | Phạm Trần Minh Khang | 3123411143 | 8, 99 | Tìm và đọc bài, quản lý Zotero, phiếu đọc, ma trận tổng quan, rà trích dẫn IEEE |
+| C: Phương pháp, dữ liệu | Ngô Nguyễn Thành Nhân | 3123411205 | 10, 11, 12 | Mục tiêu, câu hỏi nghiên cứu, thiết kế thu thập và gán nhãn, chỉ số đánh giá, đạo đức, bias |
 
 ## Nhịp làm việc
 
