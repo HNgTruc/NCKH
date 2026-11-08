@@ -24,19 +24,19 @@ Tinh chỉnh và đánh giá mô hình phân loại tin nhắn SMS tiếng Việ
 
 ### 10.2. Mục tiêu cụ thể
 
-- MT1. Gán lại ba nhãn lừa đảo, quảng cáo, bình thường cho 600 tin SMS chọn ngẫu nhiên phân tầng từ một bộ SMS tiếng Việt công khai chỉ có hai nhãn [15], theo một hướng dẫn gán nhãn viết sẵn, với độ đồng thuận giữa hai người gán độc lập trên 100 tin đo bằng Cohen's kappa đạt từ 0,60 trở lên.
-- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên các tin đã gán nhãn của mẫu 600 tin (trừ tin không đủ căn cứ gán nhãn) bằng kiểm định chéo 5 phần, đo precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
-- MT3. Đánh giá mức giảm F1 lớp lừa đảo của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh hoặc bị chèn ký tự, so với tin nguyên gốc.
+- MT1. Gán lại ba nhãn lừa đảo, quảng cáo, bình thường cho 600 tin SMS chọn ngẫu nhiên phân tầng từ một bộ SMS tiếng Việt công khai chỉ có hai nhãn [15], theo một hướng dẫn gán nhãn viết sẵn. Nhãn sơ bộ do mô hình ngôn ngữ gán và người gán thứ nhất xem lại, người gán thứ hai gán độc lập 100 tin không xem nhãn, và độ đồng thuận giữa hai bên đo bằng Cohen's kappa với ngưỡng mục tiêu từ 0,60 trở lên.
+- MT2. Đánh giá và so sánh ba mô hình TF-IDF kết hợp Logistic Regression (mô hình cơ sở), PhoBERT và ViSoBERT trên các tin đã gán nhãn của mẫu 600 tin (trừ tin không đủ căn cứ gán nhãn) bằng kiểm định chéo 5 phần, đo precision, recall, F1 của từng lớp, F1 trung bình macro và ma trận nhầm lẫn. Mục tiêu hoàn thành khi có bảng kết quả dạng trung bình ± độ lệch chuẩn qua 5 phần cho cả ba mô hình.
+- MT3. Đánh giá mức giảm F1 lớp lừa đảo của ba mô hình khi tin nhắn trong tập kiểm tra bị bỏ dấu thanh, bị chèn ký tự hoặc bị xóa thẻ quảng cáo (QC), (TB) ở đầu tin, so với tin nguyên gốc. Phép xóa thẻ kiểm tra mô hình có chỉ học thẻ thay vì nội dung hay không. Mục tiêu hoàn thành khi có bảng mức giảm F1 cho cả ba kiểu biến đổi và cả ba mô hình.
 
 ### 10.3. Câu hỏi nghiên cứu
 
 | # | Câu hỏi | Ứng với |
 | --- | --- | --- |
-| CH1 | Theo hướng dẫn gán nhãn của đề tài, hai người gán độc lập đồng thuận ở mức nào (Cohen's kappa) khi chia tin nhắn thành lừa đảo, quảng cáo và bình thường, và loại tin nào gây bất đồng nhiều nhất? | MT1 |
+| CH1 | Theo hướng dẫn gán nhãn của đề tài, người gán thứ hai và nhãn sơ bộ đồng thuận ở mức nào (Cohen's kappa) khi chia tin nhắn thành lừa đảo, quảng cáo và bình thường, và loại tin nào gây bất đồng nhiều nhất? | MT1 |
 | CH2 | Tin mà bộ dữ liệu gốc gán nhãn "hợp lệ" và tin gán nhãn "rác hoặc lừa đảo" chuyển sang ba nhãn mới theo tỉ lệ nào? | MT1 |
 | CH3 | Precision, recall và F1 của lớp lừa đảo ở PhoBERT, ViSoBERT và mô hình cơ sở TF-IDF kết hợp Logistic Regression chênh nhau bao nhiêu? | MT2 |
 | CH4 | Ở từng mô hình, bao nhiêu phần trăm tin lừa đảo bị dự đoán thành tin quảng cáo, và bao nhiêu phần trăm tin quảng cáo bị dự đoán thành tin lừa đảo? | MT2 |
-| CH5 | F1 lớp lừa đảo của mỗi mô hình giảm bao nhiêu điểm khi tin nhắn bị bỏ dấu thanh hoặc bị chèn ký tự, và mô hình nào giảm ít nhất? | MT3 |
+| CH5 | F1 lớp lừa đảo của mỗi mô hình giảm bao nhiêu điểm khi tin nhắn bị bỏ dấu thanh, bị chèn ký tự hoặc bị xóa thẻ quảng cáo, và mô hình nào giảm ít nhất? | MT3 |
 
 ### 10.4. Giả thuyết nghiên cứu
 

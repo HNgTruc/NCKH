@@ -18,7 +18,7 @@ Checklist:
 
 - Nội dung 1 (MT1, trả lời CH1 và CH2): xây dựng mẫu dữ liệu ba nhãn. Tải bộ SMS công khai đúng phiên bản, bỏ tin trùng, viết hướng dẫn gán nhãn, gợi ý nhãn bằng quy tắc từ khóa, chọn ngẫu nhiên phân tầng 600 tin. Nhãn sơ bộ của 600 tin do mô hình ngôn ngữ gán, người gán thứ nhất xem lại và chốt, người gán thứ hai gán độc lập 100 tin, tính Cohen's kappa và lập bảng chuyển từ nhãn gốc hai lớp sang ba nhãn.
 - Nội dung 2 (MT2, trả lời CH3, CH4 và H1): huấn luyện và đánh giá TF-IDF kết hợp Logistic Regression, PhoBERT và ViSoBERT trên 600 tin bằng kiểm định chéo 5 phần; tính precision, recall, F1 từng lớp, F1 trung bình macro và ma trận nhầm lẫn.
-- Nội dung 3 (MT3, trả lời CH5 và H2): tạo bản bỏ dấu và bản chèn ký tự của tập kiểm tra trong từng phần, đo mức giảm F1 lớp lừa đảo của ba mô hình.
+- Nội dung 3 (MT3, trả lời CH5 và H2): tạo bản bỏ dấu, bản chèn ký tự và bản xóa thẻ quảng cáo của tập kiểm tra trong từng phần, đo mức giảm F1 lớp lừa đảo của ba mô hình.
 
 ### 13.2. Tiến độ thực hiện
 
