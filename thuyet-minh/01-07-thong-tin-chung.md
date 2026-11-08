@@ -43,8 +43,8 @@ Loại đề tài: [TODO: A1 / B1 / B2 / C, xem docs/ke-hoach/gia-dinh.md dòng 
 | STT | Họ và tên | Đơn vị (MSSV, lớp, CTĐT) | Nội dung nghiên cứu cụ thể được giao | Chữ ký |
 | --- | --- | --- | --- | --- |
 | 1 | Huỳnh Ngọc Trúc | 3123411312, [TODO: lớp], Công nghệ thông tin | Chủ nhiệm, biên tập. Nội dung 1: chốt nhãn 600 tin (người gán thứ nhất). Viết tính cấp thiết, tiến độ, sản phẩm, kinh phí | |
-| 2 | Khang [TODO: họ tên đầy đủ] | [TODO: MSSV, lớp], Công nghệ thông tin | Tổng quan tài liệu, ma trận tổng quan, tài liệu tham khảo. Nội dung 1: gán độc lập 100 tin để đo kappa (người gán thứ hai, không xem nhãn gợi ý) | |
-| 3 | Nhân [TODO: họ tên đầy đủ] | [TODO: MSSV, lớp], Công nghệ thông tin | Mục tiêu, phương pháp. Nội dung 1: soạn hướng dẫn gán nhãn, script gán nhãn sơ bộ. Nội dung 2 và 3: huấn luyện, đánh giá ba mô hình, đánh giá trên tin biến dạng | |
+| 2 | Phạm Trần Minh Khang | 3123411143, [TODO: lớp], Công nghệ thông tin | Tổng quan tài liệu, ma trận tổng quan, tài liệu tham khảo. Nội dung 1: gán độc lập 100 tin để đo kappa (người gán thứ hai, không xem nhãn gợi ý) | |
+| 3 | Ngô Nguyễn Thành Nhân | 3123411205, [TODO: lớp], Công nghệ thông tin | Mục tiêu, phương pháp. Nội dung 1: soạn hướng dẫn gán nhãn, script gán nhãn sơ bộ. Nội dung 2 và 3: huấn luyện, đánh giá ba mô hình, đánh giá trên tin biến dạng | |
 
 ## 6. Mô tả năng lực nghiên cứu của chủ nhiệm và các thành viên
 

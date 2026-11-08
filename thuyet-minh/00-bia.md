@@ -23,8 +23,8 @@ Sinh viên thực hiện:
 | Họ tên | MSSV |
 | --- | --- |
 | Huỳnh Ngọc Trúc | 3123411312 |
-| Khang [TODO: họ tên đầy đủ] | [TODO] |
-| Nhân [TODO: họ tên đầy đủ] | [TODO] |
+| Phạm Trần Minh Khang | 3123411143 |
+| Ngô Nguyễn Thành Nhân | 3123411205 |
 
 Ngành: Công nghệ thông tin\
 Trình độ đào tạo: Đại học
