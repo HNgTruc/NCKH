@@ -45,6 +45,6 @@ Mỗi người chuẩn bị trả lời câu thuộc phần mình.
 - Nhãn do mô hình ngôn ngữ gán thì có đáng tin không? Đã nói rõ trong mục 12: nhãn sơ bộ do Claude gán, Trúc xem lại 300 trong 600 tin, Khang gán độc lập 100 tin. Đây là hạn chế đã ghi. (Trúc)
 - Mô hình có chỉ học thẻ (QC) không? Đã thử xóa thẻ: F1 lớp lừa đảo giảm 1,7 đến 2,5 điểm ở hai mô hình transformer, vì tin lừa đảo không mang thẻ. F1 quảng cáo của ViSoBERT giảm 5 điểm nên có học một phần từ thẻ. (Nhân)
 - PhoBERT không thắng mô hình cơ sở thì tên đề tài còn ý nghĩa gì? Đây là kết quả thật. Nguyên nhân có thể là mẫu nhỏ, không dò siêu tham số và nhiều tin theo mẫu lặp, chưa phân biệt được. Điểm mới của đề tài nằm ở nhãn ba lớp. (Trúc)
-- Đề tài khác gì nghiên cứu đã có cho tiếng Anh? Các nghiên cứu tiếng Anh và tiếng Việt phần lớn chia hai lớp. Đề tài tách tin lừa đảo khỏi tin rác quảng cáo. (Khang)
+- Đề tài khác gì nghiên cứu đã có? Phần lớn chia hai lớp. Bộ SMSVN [14] có nhãn Scam và Ads nhưng gán đa nhãn (một tin nhiều nhãn) và không dùng mô hình tiền huấn luyện. Đề tài đặt ba lớp loại trừ nhau để đo tỉ lệ nhầm giữa lừa đảo và quảng cáo, kèm hướng dẫn gán nhãn có kappa, so sánh ba mô hình và đo độ bền. (Khang)
 - Nhóm chưa biết Python, hai tháng có kịp không? Phần đã làm xong sơ bộ trong 8 ngày đầu tháng 11, chạy trên Google Colab bằng notebook có sẵn. Phần còn lại ghi ở hướng phát triển. (Trúc)
 - Mô hình bị kẻ lừa đảo lách bằng cách viết không dấu, chèn ký tự thì sao? Đã đo: chèn ký tự làm PhoBERT giảm 5,9 điểm, ViSoBERT 3,5 điểm, mô hình cơ sở gần như không giảm. (Nhân)

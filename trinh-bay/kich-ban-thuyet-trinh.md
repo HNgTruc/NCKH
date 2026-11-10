@@ -32,7 +32,7 @@ Chuyển sang Khang: "Vậy các nghiên cứu hiện có đã làm gì? Em xin 
 
 Bộ SMS tiếng Anh của Almeida năm 2011 có hơn 5.500 tin và chỉ có hai lớp. Hai nghiên cứu tiếng Việt, của Pham và Le-Hong năm 2016 và của Vu năm 2022, cũng chia hai lớp. Bộ năm 2016 xếp quảng cáo nhà mạng vào tin rác. Bộ công khai năm 2026 trên Hugging Face lại xếp quảng cáo nhà mạng vào tin hợp lệ. Hai bộ xếp ngược nhau.
 
-Hệ quả là tin lừa đảo, loại làm người nhận mất tiền, luôn bị gộp với một loại tin ít nguy hiểm hơn. Nghiên cứu của Dinh năm 2022 có chia nhiều loại, nhưng dữ liệu là đánh giá sản phẩm, không phải SMS.
+Hệ quả là tin lừa đảo, loại làm người nhận mất tiền, luôn bị gộp với một loại tin ít nguy hiểm hơn. Có một ngoại lệ: bộ SMSVN của Hoàng Thị Hà năm 2022 có 11 nhãn, trong đó có nhãn Scam và Ads, nhưng gán đa nhãn nên một tin có thể mang nhiều nhãn cùng lúc. Nghiên cứu của Dinh năm 2022 có chia nhiều loại, nhưng dữ liệu là đánh giá sản phẩm, không phải SMS.
 
 Nhóm mới đọc tóm tắt bảy tài liệu, và đã ghi rõ ở mục 8.5 của thuyết minh."
 
@@ -40,7 +40,7 @@ Nhóm mới đọc tóm tắt bảy tài liệu, và đã ghi rõ ở mục 8.5 
 
 "Từ bảng trên, khoảng trống của đề tài là: trong phạm vi nhóm tìm được, chưa có nghiên cứu nào gán SMS tiếng Việt thành ba lớp loại trừ nhau là lừa đảo, quảng cáo và bình thường.
 
-Nhóm nói là trong phạm vi nhóm tìm được, chứ không khẳng định chắc là chưa ai làm. Bộ lọc hiện nay chỉ báo được tin 'rác' hay 'không rác', trong khi tin lừa đảo mới là loại làm người nhận mất tiền."
+Nhóm nói là trong phạm vi nhóm tìm được, chứ không khẳng định chắc là chưa ai làm. Bộ SMSVN của Hoàng Thị Hà có nhãn lừa đảo, nhưng một tin có thể mang nhiều nhãn và bài không dùng mô hình tiền huấn luyện. Nên điểm mới của nhóm không nằm ở việc có nhãn lừa đảo, mà ở ba lớp loại trừ nhau, hướng dẫn gán nhãn có đo kappa, so sánh ba mô hình và đo độ bền khi tin bị biến dạng. Bộ lọc hiện nay chỉ báo được tin 'rác' hay 'không rác', trong khi tin lừa đảo mới là loại làm người nhận mất tiền."
 
 Chuyển sang Nhân: "Từ khoảng trống đó, nhóm đặt mục tiêu như sau, xin nhường Nhân."
 
