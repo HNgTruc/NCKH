@@ -1,42 +1,33 @@
 # Bàn giao giữa các phiên làm việc
 
-Cập nhật lần cuối: 08/11/2026 (Chủ nhật). Phiên mới đọc file này trước, rồi đọc `docs/ke-hoach/lich-trinh.md`.
+Cập nhật lần cuối: 10/11/2026 (ngày nộp và trình bày). Phiên mới đọc file này trước, rồi đọc `docs/ke-hoach/bao-cao-kiem-tra-2026-11-08.md`.
 
 ## Hạn chót
 
-Nhóm 5 nộp PDF và trình bày 10 phút cùng ngày thứ Ba 10/11/2026. Còn thứ Hai 09/11 để hoàn thiện.
+Nhóm 5 nộp PDF và trình bày 10 phút ngày thứ Ba 10/11/2026.
 
 ## Trạng thái hiện tại
 
 | Phần | Trạng thái | Ghi chú |
 | --- | --- | --- |
-| Mục 1, 3, 7, 10, 11, 12, 13, 16 | Xong nháp | Thời gian thực hiện 10/2026 đến 11/2026, 2 tháng (Trúc chốt lại 08/11). Mục tiêu MT1 đến MT3, không có demo |
-| Mục 8, 9 | Xong nháp | 20 tài liệu, đánh số IEEE theo thứ tự xuất hiện, đã kiểm tra không lệch số |
-| Mục 14 | Xong nháp | Còn 1 TODO: nơi gửi bản thảo bài báo |
-| Mục 15 | 15.1, 15.2 xong | 15.3 "Kết luận và kiến nghị" chờ kết quả notebook |
-| Mục 2, 4, 5, 6, bìa | Chờ thông tin | Xem bảng "Trúc cần gửi" |
-| Danh mục tài liệu (99) | Xong | 20 tài liệu, mỗi tài liệu có phiếu trong `tong-quan/phieu-doc/` |
-| Phản biện | Đã chạy 08/11 | Khoảng 7,2/10. Đã sửa hết 10 vấn đề, trừ việc đọc toàn văn [14] |
-| Gán nhãn 600 tin | Trúc đang làm | File `nghien-cuu/du-lieu/processed/tran-2026/gan-nhan-so-bo.csv`, lọc `dot = 1`, điền `nhan_chot` |
-| Kappa | Chưa | Khang gán mù `mau-kappa-100.csv` (Trúc chốt Khang là người gán thứ hai thật) |
-| Notebook | Viết xong, chưa chạy GPU | `nghien-cuu/notebooks/thu-nghiem-so-bo.ipynb`. Phần không cần GPU đã chạy thử bằng nhãn giả |
+| Thuyết minh mục 1 đến 16, bìa, 99 | Đủ bản thảo | Thời gian thực hiện 10/2026 đến 11/2026, 2 tháng. Bảng 13.2 kết thúc 09/11 |
+| Chỗ còn `[TODO` | 2 chỗ | Mục 2 (loại đề tài, Trúc tick), mục 6 (năng lực, nhóm tự điền). Mục 8 đã xong sau khi Trúc đọc bài [14] ngày 10/11: SMSVN có 11 nhãn gồm Scam và Ads, gán đa nhãn, năm 2022, tên tác giả Hoàng Thị Hà |
+| Mục 7 | Số điện thoại thầy để trống | Trúc chọn không ghi |
+| Dữ liệu | Xong | 600 tin gán nhãn sơ bộ (Claude gán, Trúc xem lại 300/600), Khang gán độc lập 100 tin, 29 tin bất đồng đã họp xử lý 08/11 |
+| Kappa | 0,569 vòng đầu | Dưới ngưỡng 0,60. Báo đúng con số, không tính lại sau họp |
+| Kết quả | `nghien-cuu/ket-qua/ket-qua-so-bo.json` | 597 tin, 5-fold. H1 không được ủng hộ, H2 đúng chiều nhưng chưa chắc. Đã vào mục 15.3 |
+| Kiểm tra trước nộp | Đã chạy 08/11 | Báo cáo ở `docs/ke-hoach/bao-cao-kiem-tra-2026-11-08.md`. Các lỗi nặng đã sửa, còn việc 6, 7, 8, 9 trong báo cáo |
+| Slide | `trinh-bay/slide-trinh-bay.pptx` (12 slide) | Chưa xem bản dựng thật. Kịch bản ở `trinh-bay/kich-ban-thuyet-trinh.md` và `.docx` |
+| File Word nháp | `xuat-ban/thuyet-minh-nhap.docx` | Ghép bằng thư viện docx, không phải file mẫu của trường |
 
-## Việc tiếp theo, theo thứ tự
+## Việc còn lại
 
-1. **Trúc duyệt xong 600 tin**, gửi `mau-kappa-100.csv` cho Khang. Mốc dừng: nếu tối 08/11 chưa xong thì bỏ phần chạy mô hình, thuyết minh chỉ mô tả kế hoạch.
-2. **Trúc chạy notebook trên Colab:** Runtime, Change runtime type, T4 GPU; Run all; tải lên `gan-nhan-so-bo.csv`. Khi Khang gán xong, chạy ô cuối (kappa) với `mau-kappa-100.csv`. Chép `ket-qua-so-bo.json` vào `nghien-cuu/ket-qua/`.
-3. **Claude đọc `ket-qua-so-bo.json`** rồi:
-   - Viết mục 15.3 "Kết luận và kiến nghị": MT1 đến MT3 đạt tới đâu, H1, H2 có được ủng hộ không. Nói rõ đây là kết quả sơ bộ trên 600 tin.
-   - Đưa số kappa, tỉ lệ chuyển nhãn (CH2), bảng F1, kết quả kiểm tra xóa thẻ QC vào chỗ phù hợp. Chỗ đặt kết quả sơ bộ trong thuyết minh: hỏi Trúc.
-   - Nếu kappa dưới 0,60: báo đúng con số, theo dòng 5 bảng 13.2.
-   - Nếu F1 giảm mạnh khi xóa thẻ: ghi rõ mô hình học thẻ, là hạn chế.
-4. **Điền thông tin Trúc gửi** (bảng dưới) vào bìa, mục 2, 4, 5, 6, `docs/ke-hoach/phan-cong.md`, `gia-dinh.md` dòng 1, 2, 4.
-5. **Sửa mục 8 theo bài [14]** sau khi Trúc đọc toàn văn hoang-2022. Nếu bộ SMSVN có nhãn lừa đảo riêng, điểm mới chuyển sang tổ hợp: ba lớp loại trừ nhau, hướng dẫn gán nhãn có kappa từ người gán mù, so sánh ba mô hình, đo độ bền khi tin bị biến dạng.
-6. **Trúc tự viết lại các đoạn `[TỰ VIẾT LẠI]`:** 4 ở mục 8, 1 ở mục 9, 5 ở mục 12. Đây là phần thầy hỏi khi trình bày.
-7. **Kiểm tra trước nộp:** `./scripts/build.ps1`, skill `kiem-tra-truoc-nop`, agent `kiem-tra-trich-dan`. Mục tiêu 0 chỗ `[TODO`, `[CẦN NGUỒN]`, `[TỰ VIẾT LẠI]`.
-8. **Xuất PDF:** chép vào file mẫu .docx của trường (bìa theo PhuLuc_3), tên `PPNCKH_MSSV1_MSSV2_MSSV3.pdf`.
-9. **Slide 10 phút** từ `trinh-bay/dan-y-slide.md`: thêm 1 slide kết quả sơ bộ, điền tên Khang, Nhân vào cột người nói. Tập 2 lần. Câu hỏi thầy dễ hỏi ở mục "Câu hỏi" bên dưới.
-10. **In bản giấy** nộp Văn phòng Khoa.
+1. Trúc tick mục 2, nhóm điền mục 6.
+2. Chép nội dung vào file mẫu .docx của trường (bìa theo PhuLuc_3), xuất PDF `PPNCKH_3123411312_3123411143_3123411205.pdf`.
+3. Mở file slide và file Word xem bố cục.
+4. In bản giấy nộp Văn phòng Khoa.
+5. Tùy chọn: thêm nghiên cứu smishing nước ngoài và chiến lược tìm bài vào 8.4, thêm 1 số liệu SMS vào mục 9.
+6. Commit: nhiều thay đổi chưa commit. Claude không tự commit, đưa lệnh cho Trúc chạy.
 
 ## Trúc cần gửi
 
