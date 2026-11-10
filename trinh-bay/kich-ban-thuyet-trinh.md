@@ -90,7 +90,7 @@ Ba, giả thuyết H2 đúng chiều nhưng chưa chắc. Khi bỏ dấu, PhoBER
 
 ## Slide 10. Sản phẩm và ứng dụng (Trúc, 0:40)
 
-"Đề tài có bốn sản phẩm: mẫu 600 tin gán ba nhãn, chỉ công bố mã tin kèm nhãn chứ không công bố nguyên văn tin; hướng dẫn gán nhãn có tám quy tắc; notebook Google Colab chạy lại được; và báo cáo kết quả sơ bộ.
+"Đề tài có bốn sản phẩm. Một là mẫu 600 tin gán ba nhãn, chỉ công bố mã tin kèm nhãn chứ không công bố nguyên văn tin. Hai là hướng dẫn gán nhãn có tám quy tắc. Ba là notebook Google Colab chạy lại được. Bốn là báo cáo kết quả sơ bộ.
 
 Người dùng có thể là nhóm nghiên cứu xử lý ngôn ngữ tiếng Việt, đơn vị làm ứng dụng lọc tin nhắn, và giảng viên, sinh viên dùng làm ví dụ thực hành. Đề tài không triển khai sản phẩm thương mại."
 
