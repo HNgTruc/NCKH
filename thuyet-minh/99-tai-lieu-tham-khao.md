@@ -36,7 +36,7 @@ Mẫu định dạng (từ slide Chương 3, bổ sung theo IEEE):
 
 [13] N.-B. Ho-Lam, A.-B. Nguyen, M.-A. Tran, M.-T. Tran, and V.-T. Huynh, "VIESpam: A hybrid BiLSTM approach for spam classification in English and Vietnamese SMS," in Future Data and Security Engineering – FDSE 2025 (Communications in Computer and Information Science, vol. 2709). Singapore: Springer, 2025, pp. 315–329, doi: 10.1007/978-981-95-4724-1_22.
 
-[14] Hoàng Thị Hè, Đào Xuân Dương, and Lê Thị Nhung, "Một số phương pháp phân lớp đa nhãn và ứng dụng phân loại tin nhắn SMS tiếng Việt," Tạp chí Khoa học Nông nghiệp Việt Nam, vol. 20, no. 12, pp. 1672–1683, 2022.
+[14] Hoàng Thị Hà, Đào Xuân Dương, and Lê Thị Nhung, "Một số phương pháp phân lớp đa nhãn và ứng dụng phân loại tin nhắn SMS tiếng Việt," Tạp chí Khoa học Nông nghiệp Việt Nam, vol. 20, no. 12, pp. 1672–1683, 2022.
 
 [15] N. T. T. Tran, H. K. Le, M. T. Nguyen, and V. T. Nguyen, "Vietnamese SMS Dataset with Quality Assurance," Hugging Face, 2026. [Online]. Available: https://huggingface.co/datasets/trannguyenthaituan/vietnamese_sms_dataset (truy cập 06/11/2026).
 
